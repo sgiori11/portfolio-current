@@ -1,0 +1,48 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 80vh;
+    width: 100%;
+
+}
+
+.fern {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pothos {
+    position: absolute;
+    left: 0;
+    top: 50vh;
+}
+
+.arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 120px;
+    
+    
+}
+
+.headingCont {
+    position: relative;
+    margin-left: 100px;
+}
+
+.h1 {
+    font-weight: 200;
+    font-size: 3.5em;
+    color: #192436;
+    max-width: 600px;
+}
+
+.span {
+    color: var(--medium);
+    font-weight: 900;
+}
