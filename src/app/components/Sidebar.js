@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import styles from '../styles/Sidebar.module.css';
+/*import styles from '../styles/Sidebar.module.css';*/
 import github from '/public/github.svg';
 import twitter from '/public/twitter.svg';
 import codepen from '/public/codepen.svg';
 import linkedin from '/public/linkedin.svg';
 
-export default function Sidebar() {
+export default function Sidebar({ className }) {
     return (
-     <section className={styles.container}>
+     <section className={className}>
         <Image 
             src={github}
             alt="Github logo link"

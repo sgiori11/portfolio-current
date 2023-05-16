@@ -1,0 +1,44 @@
+.projects {
+    grid-area: projects;
+}
+
+.projects span {
+    display: block;
+}
+
+.skills {
+    grid-area: skills;
+    min-height: 400px;
+}
+
+.about {
+    grid-area: about;
+    min-height: 1200px;
+}
+
+.projects, .skills, .about {
+    border-right: 1px solid #bfc4cbfb;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+    position: sticky;
+    top: calc(50vh - (70px * 2));
+    display: grid;
+    grid-template-rows: repeat(4, 70px);
+    align-self: flex-start;
+    justify-self: center;
+}
+
+.pageContent {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr minmax(0px, 150px);
+    column-gap: 1em;
+    row-gap: 0em;
+    grid-template-areas: 
+    "projects sidebar"
+    "skills sidebar"
+    "about sidebar";
+}

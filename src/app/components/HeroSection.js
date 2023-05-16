@@ -10,7 +10,7 @@ export default function HeroSection() {
         <Image 
             src={fernPic}
             alt="A hand-drawn fern"
-            width={300}
+            width={350}
             className={styles.fern}
         />
         <div className={styles.headingCont}>
@@ -29,7 +29,7 @@ export default function HeroSection() {
         <Image 
             src={pothos}
             alt="A hand-drawn pothos"
-            width={250}
+            width={300}
             className={styles.pothos}
         />
      </section>
