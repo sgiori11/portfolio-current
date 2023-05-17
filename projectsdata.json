@@ -1,5 +1,5 @@
 {
-        "projects": [ 
+    "projects": [
         {
             "id": 0,
             "name": "Confex",
@@ -18,7 +18,7 @@
             "description": "When Covid hit Norway and we were placed into lockdown, I decided to spend 4 hours replicating my Macbook Air keyboard with pure HTML and CSS. Apple never offered me a job, but I did make a lot of new Twitter friends!",
             "tags": [
                 "HTML",
-                "CSS",
+                "CSS"
             ],
             "image": "url_to_the_ctrl_css_image",
             "link": "url_to_the_ctrl_css_website"
