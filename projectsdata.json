@@ -1,0 +1,51 @@
+{
+        "projects": [ 
+        {
+            "id": 0,
+            "name": "Confex",
+            "description": "A multipage website for one of Scandinavia's leading course providers. Based on UI mockups provided by the client, I led the frontend development of the site with support from two fullstack devs.",
+            "tags": [
+                "Webflow",
+                "Jetboost",
+                "JavaScript"
+            ],
+            "image": "url_to_the_image",
+            "link": "https://www.confex.no/"
+        },
+        {
+            "id": 1,
+            "name": "CTRL + CSS",
+            "description": "When Covid hit Norway and we were placed into lockdown, I decided to spend 4 hours replicating my Macbook Air keyboard with pure HTML and CSS. Apple never offered me a job, but I did make a lot of new Twitter friends!",
+            "tags": [
+                "HTML",
+                "CSS",
+            ],
+            "image": "url_to_the_ctrl_css_image",
+            "link": "url_to_the_ctrl_css_website"
+        },
+        {
+            "id": 2,
+            "name": "Tetris",
+            "description": "This was my first attempt at building a JavaScript game, and to be honest, it was brutal. I ended up following a YouTube tutorial and reaching out to the Twitter Dev community for help. However, I did gain valuable experience writing game logic!",
+            "tags": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "image": "url_to_the_tetris_image",
+            "link": "url_to_the_tetris_website"
+        },
+        {
+            "id": 3,
+            "name": "Startup Jobs Italia",
+            "description": "This is a free, niche job board for the Italian startup community. It was inspired by a similar website that I used to frequent while living in Norway, which helped me land my first tech gig in Oslo in 2019.",
+            "tags": [
+                "Next.js",
+                "React",
+                "Supabase"
+            ],
+            "image": "url_to_the_startup_jobs_italia_image",
+            "link": "url_to_the_startup_jobs_italia_website"
+        }
+    ]
+}
