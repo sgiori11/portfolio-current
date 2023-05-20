@@ -22,7 +22,7 @@
             ],
             "image": "/keyboard.png",
             "alt": "Screenshot of a pink Macbook Air keyboard rendered entirely with CSS.",
-            "link": "url_to_the_ctrl_css_website"
+            "link": "https://codepen.io/stephsstar/pen/BaoRJYb"
         },
         {
             "id": 2,
@@ -35,7 +35,7 @@
             ],
             "image": "/tetris.png",
             "alt": "Screenshot of a Tetris game.",
-            "link": "url_to_the_tetris_website"
+            "link": "https://codepen.io/stephsstar/pen/wvKPpgd"
         },
         {
             "id": 3,
@@ -48,6 +48,6 @@
             ],
             "image": "/jobboard.png",
             "alt": "Screenshot of the Startup Jobs Italia homepage.",
-            "link": "url_to_the_startup_jobs_italia_website"
+            "link": "https://startupjobsitalia.com/"
         }
     ]
