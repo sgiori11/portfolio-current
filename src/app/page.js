@@ -3,10 +3,7 @@ import styles from './page.module.css'
 import HeroSection from './components/HeroSection';
 import Sidebar from './components/Sidebar';
 import Projects from './components/Projects.js';
-import fsPromises from 'fs/promises';
-import path from 'path';
-
-
+import data from './projectsdata.json';
 
 
 
@@ -20,7 +17,11 @@ export default function Home() {
 
     <section className={styles.projects}>
       <h2>Public Projects</h2>
-      <Projects />
+      
+      {data.map((project => (
+        <Projects key={project.id} project={project} />
+      )))}
+     
     </section>
 
     <h2 className={styles.skills}>Skills</h2>
