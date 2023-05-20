@@ -1,0 +1,102 @@
+.leftIndent {
+    margin-left: 5em;
+}
+
+.projectTitle {
+    display: flex;
+    align-items: baseline;
+    font-weight: 500;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    grid-area: title;
+}
+
+.svg {
+    position: relative;
+    top: -2px;
+    margin-left: 10px;
+    
+}
+
+.svg svg {
+    transition: transform 0.3s ease;
+}
+
+
+.tags {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    grid-area: tags;
+}
+
+.tags span {
+    color: var(--medium);
+    font-weight: 800;
+    margin-right: 12px;
+    font-size: 1.1em;
+}
+
+.projectSummary {
+    color: #192436;
+    font-weight: 200;
+    font-size: 1em;
+    line-height: 1.4;
+    text-align: justify;
+    grid-area: summary;
+}
+
+.projectImg {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    transition: 0.3s ease;
+    grid-area: image;
+}
+
+.projectImg::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    width: 250px;
+    height: 90%; 
+    background: var(--light);
+    z-index: -1;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.projectImg img {
+    border-radius: 5px;
+}
+
+.projectLinkCont {
+   /* border: 1px solid blue;*/
+    display: inline-grid;
+    padding: 1em;
+    column-gap: 5em;
+    grid-template-columns: minmax(100px, 400px) 250px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "title image"
+    "tags image"
+    "summary image"
+}
+
+.projectLinkCont:hover .projectImg {
+   top: 0;
+   left: 0;
+   transform: scale(1.1);
+   transition: all 0.3s ease;
+}
+
+.projectLinkCont:hover .projectImg::after {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.projectLinkCont:hover .svg svg {
+    transform: translate(5px, -5px) scale(1.4);
+    transition: transform 0.3s ease;
+}
