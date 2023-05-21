@@ -6,7 +6,7 @@ import styles from '../styles/Projects.module.css';
 
 export default function Projects({ project }) {
     return (
-        <div className={styles.leftIndent}>
+        <div className={styles.gridCont}>
             <Link className={styles.projectLinkCont} href={project.link}>
                 <h3 className={styles.projectTitle}>
                     {project.name}
@@ -29,7 +29,7 @@ export default function Projects({ project }) {
                         src={project.image}
                         alt={project.alt}
                         width={250}
-                        height={200}
+                        height={150}
                     />
                </div>
             </Link>

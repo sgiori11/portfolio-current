@@ -1,5 +1,5 @@
-.leftIndent {
-    margin-left: 5em;
+.gridCont {
+    margin: 0 1em 2em 50px;
 }
 
 .projectTitle {
@@ -49,9 +49,8 @@
 .projectImg {
     position: relative;
     top: 25px;
-    left: 25px;
+    left: -25px;
     transition: 0.3s ease;
-    filter: grayscale(100%);
     grid-area: image;
 }
 
@@ -59,9 +58,9 @@
     content: "";
     position: absolute;
     top: -25px;
-    left: -25px;
+    left: 25px;
     width: 250px;
-    height: 90%; 
+    height: 150px; 
     background: var(--light);
     z-index: -1;
     border-radius: 5px;
@@ -69,16 +68,16 @@
 }
 
 .projectImg img {
-    height: auto;
     border-radius: 5px;
-   
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.3s ease;
 }
 
 .projectLinkCont {
-   /* border: 1px solid blue;*/
-    display: grid;
+    display: inline-grid;
     padding: 1em;
-    column-gap: 5em;
+    column-gap: 10em;
     grid-template-columns: minmax(100px, 400px) 250px;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -87,20 +86,18 @@
     "summary image"
 }
 
-.projectLinkCont:hover .projectImg {
-   top: 0;
-   left: 0;
-   transform: scale(1.1);
-   filter: grayscale(0%);
-   transition: all 0.3s ease;
+.projectLinkCont:hover {
+    outline: 1px solid #B3B6EE; 
+    border-radius: 5px;
+    
 }
 
-.projectLinkCont:hover .projectImg::after {
-    opacity: 0;
+.projectLinkCont:hover .projectImg img {
+    filter: grayscale(0);
     transition: 0.3s ease;
 }
 
 .projectLinkCont:hover .svg svg {
-    transform: translate(5px, -5px) scale(1.4);
+    transform: translate(5px, -5px) scale(1.5);
     transition: transform 0.3s ease;
 }
