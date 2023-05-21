@@ -7,7 +7,7 @@ import styles from '../styles/Projects.module.css';
 export default function Projects({ project }) {
     return (
         <div className={styles.gridCont}>
-            <Link className={styles.projectLinkCont} href={project.link}>
+            <a className={styles.projectLinkCont} href={project.link} target="_blank" rel="noopener noreferrer">
                 <h3 className={styles.projectTitle}>
                     {project.name}
                 <span className={styles.svg}>
@@ -32,7 +32,7 @@ export default function Projects({ project }) {
                         height={150}
                     />
                </div>
-            </Link>
+            </a>
         </div>
     )
 }

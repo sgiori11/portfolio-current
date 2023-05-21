@@ -8,7 +8,7 @@
                 "Jetboost",
                 "JavaScript"
             ],
-            "image": "/confex.png",
+            "image": "/confexx.png",
             "alt": "Screenshot of Confex site",
             "link": "https://www.confex.no/"
         },
@@ -20,7 +20,7 @@
                 "HTML",
                 "CSS"
             ],
-            "image": "/keyboard.png",
+            "image": "/keyboardlol.png",
             "alt": "Screenshot of a pink Macbook Air keyboard rendered entirely with CSS.",
             "link": "https://codepen.io/stephsstar/pen/BaoRJYb"
         },
@@ -33,7 +33,7 @@
                 "CSS",
                 "JavaScript"
             ],
-            "image": "/tetris.png",
+            "image": "/tetriss.png",
             "alt": "Screenshot of a Tetris game.",
             "link": "https://codepen.io/stephsstar/pen/wvKPpgd"
         },
