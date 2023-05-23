@@ -1,4 +1,6 @@
-
+.pageContent {
+    margin-top: 5em;
+}
 
 .projects {
     grid-area: projects;
@@ -15,6 +17,16 @@
 
 .about {
     grid-area: about;
+}
+
+.footer {
+    color: #738097;
+    font-weight: 300;
+    font-size: 0.9em;
+    margin: 5em 0 3em 0;
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
 }
 
 .projects, .skills, .about {
@@ -50,7 +62,8 @@
     grid-template-areas: 
     "projects sidebar"
     "skills sidebar"
-    "about sidebar";
+    "about sidebar"
+    "footer footer";
 }
 
 .skillsCont {
@@ -58,6 +71,7 @@
     flex-wrap: wrap;
     max-width: 800px;
     margin: 1em 1em 2em 50px;
+    border: 1px solid blue;
 }
 
 .skillsCont span {
@@ -72,15 +86,67 @@
 }
 
 .about p {
-    font-weight: 300;
-    color: #192436;
-    font-size: 1.1em;
-    line-height: 1.5;
     margin: 1em 1em 2em 50px;
     max-width: 800px;
+    color: #2d3a4e;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.5;
 }
 
 .about p span {
     font-weight: 600;
     color: var(--medium);
+}
+
+@media only screen and (max-width: 1029px) {
+
+.projects, .skills, .about {
+    border-right: none;
+    
+}
+
+ .pageContent {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 0;
+    grid-template-areas: 
+    "projects"
+    "skills"
+    "about"
+    "sidebar"
+    "footer";
+  }
+
+  .skillsCont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .about p {
+    margin: 0px;
+  }
+
+  .sidebar {
+    margin-top: 5em;
+    margin-bottom: 0;
+    position: relative;
+    top: 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 70px);
+    align-items: flex-end;
+    justify-self: center;
+}
+
+.sidebar a {
+    transition: transform 0.3s ease;
+}
+
+.sidebar a:hover {
+    transform: translateY(-7px);
+    transition: transform 0.3s ease;
+}
 }

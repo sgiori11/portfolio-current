@@ -5,7 +5,7 @@
             "description": "A multipage website for one of Scandinavia's leading course providers. Based on UI mockups provided by the client, I led the frontend development of the site with support from two fullstack devs.",
             "tags": [
                 "Webflow",
-                "Jetboost",
+                "CSS",
                 "JavaScript"
             ],
             "image": "/confexx.png",
@@ -44,7 +44,8 @@
             "tags": [
                 "Next.js",
                 "React",
-                "Supabase"
+                "Supabase",
+                "OAuth"
             ],
             "image": "/jobboard.png",
             "alt": "Screenshot of the Startup Jobs Italia homepage.",

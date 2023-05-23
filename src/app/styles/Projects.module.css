@@ -38,10 +38,10 @@
 }
 
 .projectSummary {
-    color: #192436;
-    font-weight: 200;
+    color: #2d3a4e;
+    font-weight: 300;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.5;
     text-align: justify;
     grid-area: summary;
 }
@@ -83,12 +83,13 @@
     grid-template-areas: 
     "title image"
     "tags image"
-    "summary image"
+    "summary image";
 }
 
 .projectLinkCont:hover {
-    outline: 1px solid #B3B6EE; 
-    border-radius: 5px;
+    /*outline: 1px solid #B3B6EE; */
+    border-radius: 2.5px;
+    background-color: rgba(226, 227, 254, 0.29);
     
 }
 
@@ -100,4 +101,49 @@
 .projectLinkCont:hover .svg svg {
     transform: translate(5px, -5px) scale(1.5);
     transition: transform 0.3s ease;
+}
+
+@media only screen and (max-width: 1029px) {
+    .gridCont {
+        margin: 0 2em 2em 2px;
+    }
+
+    .projectLinkCont {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        grid-template-areas: 
+        "image"
+        "title"
+        "tags"
+        "summary";
+    }
+
+    .projectSummary {
+        margin-bottom: 3em;
+    }
+    
+    .projectImg {
+        top: 25px;
+        left: 25px;
+        margin-bottom: 3em;
+    }
+    
+    .projectImg::after {
+        top: -25px;
+        left: -25px;
+    }
+
+    .projectLinkCont:hover {
+        background-color: inherit;
+    }
+    
+    .projectLinkCont:hover .projectImg img {
+        filter: none;
+    }
+    
+    .projectLinkCont:hover .svg svg {
+        transform: none;
+       
+    }
 }

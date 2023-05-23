@@ -26,17 +26,18 @@ export default function Home() {
     <section className={styles.skills}>
       <h2>Skills</h2>
       <div className={styles.skillsCont}>
-        <span>#React</span>
-        <span>#Next.js</span>
-        <span>#Javascript</span>
-        <span>#CSS</span>
-        <span>#HTML</span>
-        <span>#Google Analytics</span>
-        <span>#Amplitude</span>
-        <span>#Google Tag Manager</span>
-        <span>#Optimizely</span>
-        <span>#A/B testing</span>
-        <span>#Conversion Rate Optimization</span>
+        <span>React</span>
+        <span>Next.js</span>
+        <span>Javascript</span>
+        <span>CSS</span>
+        <span>HTML</span>
+        <span>Webflow</span>
+        <span>Google Analytics</span>
+        <span>Amplitude</span>
+        <span>GTM</span>
+        <span>UI/UX Design</span>
+        <span>Figma</span>
+        <span>A/B Testing</span>
       </div>
     </section>
 
@@ -87,8 +88,8 @@ export default function Home() {
       </p>
     </section>
 
+    <footer className={styles.footer}>Built in Milan with Next.js and hand-drawn doodles.</footer>
    </section>
-
      
    </div>
   )

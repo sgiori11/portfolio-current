@@ -20,6 +20,7 @@ export default function Projects({ project }) {
                     <span>{project.tags[0]}</span>
                     <span>{project.tags[1]}</span>
                     <span>{project.tags[2]}</span>
+                    <span>{project.tags[3]}</span>
                 </div>
                 <p className={styles.projectSummary}>
                     {project.description}

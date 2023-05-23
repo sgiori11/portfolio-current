@@ -1,12 +1,9 @@
 .container {
-    
     display: flex;
     justify-content: center;
     align-items: center;
-
     min-height: 100vh;
     width: 100%;
-
 }
 
 .fern {
@@ -26,8 +23,6 @@
     right: 0;
     top: 0;
     margin-top: 120px;
-    
-    
 }
 
 .headingCont {
@@ -45,4 +40,41 @@
 .span {
     color: var(--medium);
     font-weight: 900;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .h1 {
+        font-weight: 200;
+        font-size: 2.5em;
+        color: #192436;
+        max-width: 450px;
+    }
+
+    .fern {
+        width: 250px;  /* adjust the width as needed */
+        height: auto;  /* to preserve aspect ratio */
+      
+    }
+    
+    .pothos {
+        width: 150px;  /* adjust the width as needed */
+        height: auto;  /* to preserve aspect ratio */
+    }
+
+    .headingCont {
+        position: relative;
+        margin: 0 2em;
+        padding-top: 1em;
+    }
+
+    .arrow {
+        position: relative;
+        left: 70vw;
+        top: 0;
+        margin-top: 0px;
+        width: 40px;
+        height: auto;
+    }
+
 }
