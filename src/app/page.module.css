@@ -71,7 +71,6 @@
     flex-wrap: wrap;
     max-width: 800px;
     margin: 1em 1em 2em 50px;
-    border: 1px solid blue;
 }
 
 .skillsCont span {
@@ -101,9 +100,8 @@
 
 @media only screen and (max-width: 1029px) {
 
-.projects, .skills, .about {
-    border-right: none;
-    
+.projects h2, .skills h2, .about h2 {
+    font-size: 2.5em;
 }
 
  .pageContent {
@@ -121,12 +119,7 @@
   .skillsCont {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
-    margin: 0;
-  }
-
-  .about p {
-    margin: 0px;
+    margin: 0 1em 0 1em;
   }
 
   .sidebar {
@@ -136,7 +129,8 @@
     top: 0;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 70px);
+    grid-template-columns: repeat(4, auto);
+    column-gap: 25px;
     align-items: flex-end;
     justify-self: center;
 }
@@ -149,4 +143,17 @@
     transform: translateY(-7px);
     transition: transform 0.3s ease;
 }
+
+.projects, .skills, .about {
+    border-right: none;  
+    margin: 0 1em;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+    .footer {
+        font-size: 12px;
+    }
+
 }
