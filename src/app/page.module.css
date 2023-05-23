@@ -122,6 +122,10 @@
     margin: 0 1em 0 1em;
   }
 
+  .skillsCont span {
+    font-size: 1em;
+  }
+
   .sidebar {
     margin-top: 5em;
     margin-bottom: 0;
@@ -147,6 +151,11 @@
 .projects, .skills, .about {
     border-right: none;  
     margin: 0 1em;
+}
+
+.about p {
+    margin: 0;
+    padding: 1em;
 }
 
 }
