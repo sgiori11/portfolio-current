@@ -2,6 +2,10 @@
     margin-top: 5em;
 }
 
+.projects h2, .skills h2, .about h2 {
+    padding-left: 1em;
+}
+
 .projects {
     grid-area: projects;
 }
@@ -12,7 +16,6 @@
 
 .skills {
     grid-area: skills;
-    min-height: 400px;
 }
 
 .about {
@@ -102,6 +105,7 @@
 
 .projects h2, .skills h2, .about h2 {
     font-size: 2.5em;
+    padding-left: inherit;
 }
 
  .pageContent {
@@ -161,8 +165,24 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .projects h2, .skills h2, .about h2 {
+        font-size: 2em;
+        padding-left: inherit;
+    }
+
     .footer {
         font-size: 12px;
     }
+
+    .skillsCont {
+        margin: 1em;
+      }
+
+      .about p {
+        margin: 0;
+        padding: 0 1em;
+    }
+
+   
 
 }

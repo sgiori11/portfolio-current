@@ -25,6 +25,7 @@
 
 .tags {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 20px;
     grid-area: tags;
@@ -43,6 +44,7 @@
     font-size: 1em;
     line-height: 1.5;
     text-align: justify;
+    max-width: 500px;
     grid-area: summary;
 }
 
@@ -105,11 +107,25 @@
 
 @media only screen and (max-width: 1029px) {
     .gridCont {
-        margin: 0;
+        margin: 0 1em;
+        padding: 0;
     }
 
     .projectLinkCont {
-        display: grid;
+        display: inline-grid;
+        padding: 1em;
+        column-gap: 10em;
+        grid-template-columns: minmax(100px, 400px) 250px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "title image"
+        "tags image"
+        "summary image";
+    }
+
+    .projectLinkCont {
+        display: inline-grid;
+        padding: 0;
         grid-template-columns: 1fr;
         column-gap: 0;
         grid-template-areas: 
@@ -146,5 +162,19 @@
     .projectLinkCont:hover .svg svg {
         transform: none;
        
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .projectTitle {
+        font-size: 1.7em;
+    }
+
+    .tags span {
+        font-size: 1em;
+    }
+
+    .projectSummary {
+        max-width: 250px;
     }
 }
