@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import SoftSkills from '/public/softskills.svg';
 import styles from './page.module.css'
 import HeroSection from './components/HeroSection';
 import Sidebar from './components/Sidebar';
@@ -38,6 +39,19 @@ export default function Home() {
         <span>UI/UX Design</span>
         <span>Figma</span>
         <span>A/B Testing</span>
+      </div>
+      <div className={styles.skillsCont + ' ' + styles.softSkills}>
+        <Image 
+              src={SoftSkills}
+              alt="A label and arrow pointing to softer skills."
+              width={180}
+              className={styles.softSkillsImg}
+          />
+          <div className={styles.softSkillsCont}>
+            <span>Open-minded</span>
+            <span>Resourceful</span>
+            <span>Independent</span>
+          </div>
       </div>
     </section>
 

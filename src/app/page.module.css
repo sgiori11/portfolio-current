@@ -48,7 +48,7 @@
 }
 
 .sidebar a {
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .sidebar a:hover {
@@ -60,7 +60,6 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr minmax(0px, 150px);
-    column-gap: 1em;
     row-gap: 0em;
     grid-template-areas: 
     "projects sidebar"
@@ -86,6 +85,39 @@
     font-weight: 300;
     font-size: 1.1em;
 }
+
+.softSkillsCont {
+    grid-area: softSkills;
+}
+
+.softSkillsImg {
+    grid-area: img;
+}
+
+.softSkills {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "img softSkills"
+    "img softSkills";
+    margin-top: 5em;
+
+}
+
+.softSkills div {
+    display: flex;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    
+}
+
+.softSkills div span {
+   display: block;
+   background-color: #c7c8e646;
+   color: rgb(95, 93, 106);
+   
+}
+
 
 .about p {
     margin: 1em 1em 2em 50px;
@@ -129,6 +161,27 @@
   .skillsCont span {
     font-size: 1em;
   }
+
+  .softSkills {
+    margin-top: 5em !important;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "img softSkills"
+    "img softSkills";
+}
+
+.softSkills div {
+    display: flex;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    
+}
+
+.softSkills div span {
+   display: block;
+}
+
 
   .sidebar {
     margin-top: 5em;
@@ -176,6 +229,11 @@
 
     .skillsCont {
         margin: 1em;
+      }
+
+      .softSkillsImg  {
+        width: 150px;
+        height: auto;
       }
 
       .about p {

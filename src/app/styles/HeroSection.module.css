@@ -23,6 +23,8 @@
     right: 0;
     top: 0;
     margin-top: 120px;
+    width: 50px;
+
 }
 
 .headingCont {
@@ -38,9 +40,38 @@
 }
 
 .span {
-    color: var(--medium);
     font-weight: 900;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: radial-gradient(106.51% 265.32% at 32.32% -6.51%, #7000FF 0%, rgb(2, 188, 255) 100%);
+
+
 }
+
+
+
+@keyframes draw {
+    0% {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .arrowPath {
+    animation: draw 5s ease-out forwards;
+    stroke: #211B69;
+    stroke-width: 10px;
+    fill: none;
+   
+  }
+
+  
+  
 
 @media only screen and (max-width: 750px) {
 
