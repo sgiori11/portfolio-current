@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection';
 import Sidebar from './components/Sidebar';
 import Projects from './components/Projects.js';
 import data from './projectsdata.json';
+import { motion } from "framer-motion";
 
 
 
