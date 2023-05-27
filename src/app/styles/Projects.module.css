@@ -40,9 +40,9 @@
 
 .projectSummary {
     color: #2d3a4e;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1em;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: justify;
     max-width: 500px;
     grid-area: summary;
@@ -137,6 +137,7 @@
 
     .projectSummary {
         margin-bottom: 5em;
+        text-align: left;
     }
     
     .projectImg {
