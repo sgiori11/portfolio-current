@@ -1,5 +1,20 @@
  [
         {
+            "id": 3,
+            "name": "Startup Jobs Italia",
+            "description": "This is a free, niche job board for the Italian startup community. It was inspired by a similar website in Norway that I used to land my first tech gig in 2019.",
+            "tags": [
+                "Next.js",
+                "React",
+                "Supabase",
+                "OAuth"
+            ],
+            "image": "/jobboard.png",
+            "alt": "Screenshot of the Startup Jobs Italia homepage.",
+            "link": "https://startupjobsitalia.com/"
+        },
+
+        {
             "id": 0,
             "name": "Confex",
             "description": "A multipage website for one of Scandinavia's leading course providers. Based on UI mockups provided by the client, I led the frontend development of the site with support from two fullstack devs.",
@@ -12,6 +27,7 @@
             "alt": "Screenshot of Confex site",
             "link": "https://www.confex.no/"
         },
+
         {
             "id": 1,
             "name": "CTRL + CSS",
@@ -24,6 +40,7 @@
             "alt": "Screenshot of a pink Macbook Air keyboard rendered entirely with CSS.",
             "link": "https://codepen.io/stephsstar/pen/BaoRJYb"
         },
+
         {
             "id": 2,
             "name": "Tetris",
@@ -36,19 +53,6 @@
             "image": "/tetriss.png",
             "alt": "Screenshot of a Tetris game.",
             "link": "https://codepen.io/stephsstar/pen/wvKPpgd"
-        },
-        {
-            "id": 3,
-            "name": "Startup Jobs Italia",
-            "description": "This is a free, niche job board for the Italian startup community. It was inspired by a similar Norwegian website that I used to land my first Oslo tech gig in 2019.",
-            "tags": [
-                "Next.js",
-                "React",
-                "Supabase",
-                "OAuth"
-            ],
-            "image": "/jobboard.png",
-            "alt": "Screenshot of the Startup Jobs Italia homepage.",
-            "link": "https://startupjobsitalia.com/"
         }
+
     ]
