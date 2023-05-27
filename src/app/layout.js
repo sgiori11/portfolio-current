@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter, Oswald } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
 
  
 const inter = Inter({
@@ -18,7 +19,10 @@ const oswald = Oswald({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${oswald.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${oswald.variable}`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
