@@ -45,8 +45,9 @@ export default function Skills() {
               <span>React</span>
               <span>Next.js</span>
               <span>Javascript</span>
+              <span>Framer Motion</span>
               <span>CSS</span>
-              <span>HTML</span>
+              <span>SASS</span>
               <span>Webflow</span>
               <span>Google Analytics</span>
               <span>Amplitude</span>
