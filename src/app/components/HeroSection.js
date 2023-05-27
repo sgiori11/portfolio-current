@@ -1,22 +1,33 @@
+'use client';
+
 import Image from 'next/image';
 import fernPic from '/public/fern.png';
 import pothos from '/public/pothos.png';
 import arrow from '/public/arrow.svg';
 import styles from '../styles/HeroSection.module.css';
+import { motion } from "framer-motion";
+
+
+
 
 export default function HeroSection() {
+
     return (
       <section className={styles.container}>
-        <Image 
-            src={fernPic}
-            alt="A hand-drawn fern"
-            width={350}
-            className={styles.fern}
-        />
+            <Image 
+                className={styles.fern}
+                src={fernPic}
+                alt="A hand-drawn fern"
+                width={350}
+            />
         <div className={styles.headingCont}>
-            <h1 className={styles.h1}>Hi, I'm 
-                <span className={styles.span}> Steph! </span>
-            I develop and optimize digital products.
+            <h1 className={styles.h1}>Hi, I'm <motion.span 
+                    className={styles.span}
+                    initial={{ opacity: 0, scale: 0.4 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ type: 'spring', bounce: 0.4 }}                 
+        
+                    >Steph!</motion.span> I develop and optimize digital products.
             </h1>
             <div>
             <svg className={styles.arrow} width="77" height="192" viewBox="-6 -6 89 204" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +37,6 @@ export default function HeroSection() {
             </div>
           
         </div>
-       
         <Image 
             src={pothos}
             alt="A hand-drawn pothos"
