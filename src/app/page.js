@@ -1,16 +1,12 @@
-import Image from 'next/image'
-import SoftSkills from '/public/softskills.svg';
 import styles from './page.module.css'
 import HeroSection from './components/HeroSection';
 import Sidebar from './components/Sidebar';
 import Projects from './components/Projects.js';
+import Skills from './components/Skills.js';
 import data from './projectsdata.json';
-import { motion } from "framer-motion";
-
 
 
 export default function Home() {
-
   return (
   <div>
    <HeroSection />
@@ -24,36 +20,10 @@ export default function Home() {
         <Projects key={project.id} project={project} />
       )))}
     </section>
-    
+
     <section className={styles.skills}>
       <h2>Skills</h2>
-      <div className={styles.skillsCont}>
-        <span>React</span>
-        <span>Next.js</span>
-        <span>Javascript</span>
-        <span>CSS</span>
-        <span>HTML</span>
-        <span>Webflow</span>
-        <span>Google Analytics</span>
-        <span>Amplitude</span>
-        <span>GTM</span>
-        <span>UI/UX Design</span>
-        <span>Figma</span>
-        <span>A/B Testing</span>
-      </div>
-      <div className={styles.skillsCont + ' ' + styles.softSkills}>
-        <Image 
-              src={SoftSkills}
-              alt="A label and arrow pointing to softer skills."
-              width={180}
-              className={styles.softSkillsImg}
-          />
-          <div className={styles.softSkillsCont}>
-            <span>Open-minded</span>
-            <span>Resourceful</span>
-            <span>Independent</span>
-          </div>
-      </div>
+      <Skills />
     </section>
 
     <section className={styles.about}>

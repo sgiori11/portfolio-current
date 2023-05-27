@@ -1,12 +1,35 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/Projects.module.css';
+import { motion } from "framer-motion";
 
-
+const cardVariants = {
+    offscreen: {
+      x: -300,
+      opacity: 0
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.25,
+        duration: 1
+      }
+    }
+  };
 
 export default function Projects({ project }) {
     return (
-        <div className={styles.gridCont}>
+        <motion.div 
+            className={styles.gridCont}
+            initial="offscreen"
+            whileInView="onscreen"
+            variants={cardVariants}
+            viewport={{ once: true }}
+                    >
             <a className={styles.projectLinkCont} href={project.link} target="_blank" rel="noopener noreferrer">
                 <h3 className={styles.projectTitle}>
                     {project.name}
@@ -34,6 +57,6 @@ export default function Projects({ project }) {
                     />
                </div>
             </a>
-        </div>
+        </motion.div>
     )
 }
