@@ -44,7 +44,7 @@
         {
             "id": 2,
             "name": "Tetris",
-            "description": "This was my first JavaScript game, and it provided an excellent foundation for manipulating the DOM. I was inspired by Ania Kubow’s tutorial during the #100DaysOfCode challenge, and I’ve been active on tech Twitter ever since!",
+            "description": "This was my first JavaScript game, and it provided an excellent foundation for manipulating the DOM. I was inspired by Ania Kubow’s tutorial during the #100DaysOfCode challenge, and I’ve been active on tech Twitter ever since.",
             "tags": [
                 "HTML",
                 "CSS",
