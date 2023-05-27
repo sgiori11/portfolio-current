@@ -31,7 +31,7 @@
         {
             "id": 1,
             "name": "CTRL + CSS",
-            "description": "When Covid hit Norway and we were placed into lockdown, I decided to spend 4 hours replicating my Macbook Air keyboard with pure HTML and CSS. Apple never offered me a job, but I did make a lot of new Twitter friends!",
+            "description": "When Covid hit Norway and we were placed into lockdown, I decided to spend four hours replicating my Macbook Air keyboard with HTML and CSS. Apple never offered me a job, but I did break 100k+ impressions on Twitter!",
             "tags": [
                 "HTML",
                 "CSS"
@@ -44,7 +44,7 @@
         {
             "id": 2,
             "name": "Tetris",
-            "description": "This was my first attempt at building a JavaScript game, and to be honest, it was brutal. I ended up following a YouTube tutorial and reaching out to the Twitter Dev community for help. However, I did gain valuable experience writing game logic!",
+            "description": "This was my first JavaScript game, and it provided an excellent foundation for manipulating the DOM. I was inspired by Ania Kubow’s tutorial during the #100DaysOfCode challenge, and I’ve been active on tech Twitter ever since!",
             "tags": [
                 "HTML",
                 "CSS",
