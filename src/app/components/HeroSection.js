@@ -21,7 +21,7 @@ export default function HeroSection() {
                 width={350}
             />
         <div className={styles.headingCont}>
-            <h1 className={styles.h1}>Hi, I'm <motion.span 
+            <h1 className={styles.h1}>Hi, I&apos;m <motion.span 
                     className={styles.span}
                     animate={{ scale: [0.8, 1.2, 0.8, 1] }}
                                   
