@@ -23,10 +23,8 @@ export default function HeroSection() {
         <div className={styles.headingCont}>
             <h1 className={styles.h1}>Hi, I'm <motion.span 
                     className={styles.span}
-                    initial={{ opacity: 0, scale: 0.4 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ type: 'spring', bounce: 0.4 }}                 
-        
+                    animate={{ scale: [0.8, 1.2, 0.8, 1] }}
+                                  
                     >Steph!</motion.span> I develop and optimize digital products.
             </h1>
             <div>
