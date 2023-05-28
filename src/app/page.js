@@ -17,13 +17,13 @@ export default function Home() {
         <meta name="keywords" content="UI,UX,Design,React,JavaScript,CRO,frontend development,web development,conversion rate optimization, experimentation"></meta>
 
         <meta property="og:title" content="Stephanie Giori - Frontend Dev"></meta>
-        <meta property="og:image" content=""></meta>
+        <meta property="og:image" content="https://github.com/sgiori11/portfolio-v2/blob/main/public/open-graph.png?raw=true"></meta>
         <meta property="og:description" content="UI Developer & Experimentation Specialist"></meta>
         <meta property="og:url" content="https://sgiori.xyz/"></meta>
 
         <meta name="twitter:title" content="Stephanie Giori - Frontend Dev"></meta>
         <meta name="twitter:description" content="UI Developer & Experimentation Specialist"></meta>
-        <meta name="twitter:image" content=""></meta>
+        <meta name="twitter:image" content="https://github.com/sgiori11/portfolio-v2/blob/main/public/twitter-card.png?raw=true"></meta>
         <meta name="twitter:card" content="summary_large_image"></meta>
 
         <link rel="icon" sizes="192x192" href="/smallIcon.png"></link>
