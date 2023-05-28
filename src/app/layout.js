@@ -1,8 +1,28 @@
 import './globals.css'
 import { Inter, Oswald } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
-import Head from 'next/head';
 
+
+export const metadata = {
+  openGraph: {
+    title: 'Stephanie Giori - Frontend Dev',
+    description: 'UI Developer & Experimentation Specialist',
+    image: "https://github.com/sgiori11/portfolio-v2/blob/main/public/open-graph.png?raw=true"
+  },
+  icons: {
+    icon: '/icon.png',
+    other: {
+      rel: '/icon.png',
+      url: '/icon.png',
+    }
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Stephanie Giori - Frontend Dev',
+    description: 'UI Developer & Experimentation Specialist',
+    images: ['https://github.com/sgiori11/portfolio-v2/blob/main/public/twitter-card.png?raw=true'],
+  },
+};
  
 const inter = Inter({
   subsets: ['latin'],
