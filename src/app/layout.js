@@ -4,6 +4,9 @@ import { Analytics } from '@vercel/analytics/react';
 
 
 export const metadata = {
+  title: "Stephanie Giori - Frontend Dev & Experimentation Specialist",
+  description: "Stephanie Giori's frontend development & experimentation portfolio",
+  keywords: ["UX", "Design", "React", "JavaScript", "CRO", "frontend development", "web development", "conversion rate optimization", "experimentation"]
   openGraph: {
     title: 'Stephanie Giori - Frontend Dev',
     description: 'UI Developer & Experimentation Specialist',
