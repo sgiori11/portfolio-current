@@ -26,8 +26,8 @@ export default function Home() {
         <meta name="twitter:image" content=""></meta>
         <meta name="twitter:card" content="summary_large_image"></meta>
 
-        <link rel="icon" sizes="192x192" href="/path/to/icon-192x192.png"></link>
-        <link rel="icon" sizes="512x512" href="/path/to/icon-512x512.png"></link>
+        <link rel="icon" sizes="192x192" href="/smallIcon.png"></link>
+        <link rel="icon" sizes="512x512" href="/largeIcon.png"></link>
 
       </Head>
 
