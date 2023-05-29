@@ -15,6 +15,7 @@ export default function HeroSection() {
     return (
       <section className={styles.container}>
             <Image 
+                priority={true}
                 className={styles.fern}
                 src={fernPic}
                 alt="A hand-drawn fern"
@@ -36,6 +37,7 @@ export default function HeroSection() {
           
         </div>
         <Image 
+            priority={true}
             src={pothos}
             alt="A hand-drawn pothos"
             width={300}
