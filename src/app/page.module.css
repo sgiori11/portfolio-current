@@ -20,6 +20,7 @@
 
 .about {
     grid-area: about;
+    border: 1px solid blue;
 }
 
 .footer {
