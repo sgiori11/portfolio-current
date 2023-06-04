@@ -1,6 +1,6 @@
 import styles from './page.module.css'
 import HeroSection from './components/HeroSection';
-import Timeline from './components/Timeline';
+import Timelinetwo from './components/Timelinetwo';
 import Sidebar from './components/Sidebar';
 import Projects from './components/Projects.js';
 import Skills from './components/Skills.js';
@@ -31,6 +31,13 @@ export default function Home() {
           <Skills />
         </section>
 
+        <section className={styles.timeline}>
+          <h2>Work Experience</h2>
+          <section className={styles.timelineContainer}>
+            <Timelinetwo />
+          </section>
+        </section>
+
         <section className={styles.about}>
           <h2>About 
             <span>
@@ -53,13 +60,6 @@ export default function Home() {
           <br></br>
           When I’m not working, I enjoy <span>drawing</span>, <span>traveling around Italy</span>, and staring in admiration at my many <span>plants</span>—some of which can be found scattered around this site. I also take daily walks along the Navigli to compensate for my addiction to Italian cuisine.
           </p>
-        </section>
-
-        <section className={styles.timeline}>
-          <h2>Work Experience</h2>
-          <section className={styles.timelineContainer}>
-            <Timeline />
-          </section>
         </section>
 
         <footer className={styles.footer}>Built in Milan with Next.js and hand-drawn doodles.</footer>

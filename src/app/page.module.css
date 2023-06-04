@@ -29,8 +29,8 @@
 
 .timelineContainer {
     width: 100%; /* Set the width of the timeline container to 100% of its parent */
-    display: flex; /* Display the children of the timeline container in a row */
-    overflow-x: scroll; /* Make the timeline container scrollable horizontally */
+    margin: 1em 1em 2em 50px;
+
 }
 
 
@@ -76,8 +76,8 @@
     grid-template-areas: 
     "projects sidebar"
     "skills sidebar"
-    "about sidebar"
     "timeline sidebar"
+    "about sidebar"
     "footer footer";
 }
 
