@@ -53,7 +53,13 @@ export default function Home() {
           <br></br>
           When I’m not working, I enjoy <span>drawing</span>, <span>traveling around Italy</span>, and staring in admiration at my many <span>plants</span>—some of which can be found scattered around this site. I also take daily walks along the Navigli to compensate for my addiction to Italian cuisine.
           </p>
-          <Timeline />
+        </section>
+
+        <section className={styles.timeline}>
+          <h2>Work Experience</h2>
+          <section className={styles.timelineContainer}>
+            <Timeline />
+          </section>
         </section>
 
         <footer className={styles.footer}>Built in Milan with Next.js and hand-drawn doodles.</footer>
