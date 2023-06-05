@@ -2,7 +2,7 @@
     margin-top: 5em;
 }
 
-.projects h2, .skills h2, .about h2 {
+.projects h2, .skills h2, .about h2, .timeline h2 {
     padding-left: 1em;
 }
 
@@ -22,6 +22,18 @@
     grid-area: about;
 }
 
+.timeline {
+    grid-area: timeline;
+    overflow: hidden;
+}
+
+.timelineContainer {
+    width: 100%; /* Set the width of the timeline container to 100% of its parent */
+    margin: 1em 1em 2em 50px;
+
+}
+
+
 .footer {
     color: #738097;
     font-weight: 300;
@@ -32,7 +44,7 @@
     grid-area: footer;
 }
 
-.projects, .skills, .about {
+.projects, .skills, .about, .timeline {
     border-right: 1px solid #bfc4cbfb;
 
 }
@@ -64,6 +76,7 @@
     grid-template-areas: 
     "projects sidebar"
     "skills sidebar"
+    "timeline sidebar"
     "about sidebar"
     "footer footer";
 }
@@ -85,7 +98,7 @@
 
 @media only screen and (max-width: 1029px) {
 
-.projects h2, .skills h2, .about h2 {
+.projects h2, .skills h2, .about h2, .timeline h2 {
     font-size: 2.5em;
     padding-left: inherit;
 }
@@ -97,6 +110,7 @@
     grid-template-areas: 
     "projects"
     "skills"
+    "timeline"
     "about"
     "sidebar"
     "footer";
@@ -124,7 +138,7 @@
     transition: transform 0.3s ease;
 }
 
-.projects, .skills, .about {
+.projects, .skills, .about, .timeline {
     border-right: none;  
     margin: 0 1em;
 }
@@ -137,7 +151,12 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .projects h2, .skills h2, .about h2 {
+    .timelineContainer {
+        width: 100%; /* Set the width of the timeline container to 100% of its parent */
+        margin: 0 1em;
+    
+    }
+    .projects h2, .skills h2, .about h2, .timeline h2 {
         font-size: 2em;
         padding-left: inherit;
     }
@@ -145,7 +164,7 @@
     .footer {
         font-size: 12px;
     }
-
+ 
     .about p {
         margin: 0;
         padding: 0 1em;

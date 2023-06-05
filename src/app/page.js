@@ -1,5 +1,6 @@
 import styles from './page.module.css'
 import HeroSection from './components/HeroSection';
+import Timelinetwo from './components/Timeline';
 import Sidebar from './components/Sidebar';
 import Projects from './components/Projects.js';
 import Skills from './components/Skills.js';
@@ -28,6 +29,13 @@ export default function Home() {
         <section className={styles.skills}>
           <h2>Skills</h2>
           <Skills />
+        </section>
+
+        <section className={styles.timeline}>
+          <h2>Work Experience</h2>
+          <section className={styles.timelineContainer}>
+            <Timelinetwo />
+          </section>
         </section>
 
         <section className={styles.about}>

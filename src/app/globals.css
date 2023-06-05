@@ -15,6 +15,10 @@
   margin: 0;
 }
 
+html {
+  scroll-snap-type: y mandatory !important; 
+}  
+
 html,
 body {
   font-family: var(--font-inter);
