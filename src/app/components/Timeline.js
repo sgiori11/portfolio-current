@@ -37,7 +37,7 @@ function ImageComponent({ data }) {
   );
 }
 
-function Timelinetwo() {
+function Timeline() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -55,4 +55,4 @@ function Timelinetwo() {
   );
 }
 
-export default Timelinetwo;
+export default Timeline;
