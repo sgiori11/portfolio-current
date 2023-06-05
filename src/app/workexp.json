@@ -13,7 +13,7 @@
         "image": "/2.png",
         "alt": "A Norwegian fjord",
         "place": "Oslo, NO",
-        "jobtitle": "Web Developer & Optimization Specialist",
+        "jobtitle": "Webflow Developer & Optimization Specialist",
         "company": "Fullstakk Marketing",
         "years": "2020-2022"
 
@@ -23,7 +23,7 @@
         "image": "/3.png",
         "alt": "The Cliffs of Moher",
         "place": "Galway, IE",
-        "jobtitle": "Copy Editor (and backpacker)",
+        "jobtitle": "Copy Editor // Backpacker",
         "company": "Acclaro",
         "years": "2019"
 
@@ -32,8 +32,8 @@
     {
         "image": "/4.png",
         "alt": "San Francisco park",
-        "place": "NorCal❤️🌲🌊",
-        "jobtitle": "Technical Writer",
+        "place": "NorCal 🌲🌊",
+        "jobtitle": "Technical Writer // Local",
         "company": "Netgear",
         "years": "2018-2019"
 

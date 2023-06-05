@@ -27,8 +27,8 @@ function ImageComponent({ data }) {
           style={{objectFit: "cover"}}
         />
       </div>
-      <motion.div style={{ y }}>
-        <h2>{data.place}</h2>
+      <motion.div className={styles.contentSection} style={{ y }}>
+        <h2 className={styles.h2}>{data.place}</h2>
         <p className={styles.jobTitle}>{data.jobtitle}</p>
         <p className={styles.company}>{data.company}</p>
         <p className={styles.years}>{data.years}</p>

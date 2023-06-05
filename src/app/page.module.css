@@ -110,8 +110,8 @@
     grid-template-areas: 
     "projects"
     "skills"
-    "about"
     "timeline"
+    "about"
     "sidebar"
     "footer";
   }
@@ -151,6 +151,11 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .timelineContainer {
+        width: 100%; /* Set the width of the timeline container to 100% of its parent */
+        margin: 0 1em;
+    
+    }
     .projects h2, .skills h2, .about h2, .timeline h2 {
         font-size: 2em;
         padding-left: inherit;
@@ -159,7 +164,7 @@
     .footer {
         font-size: 12px;
     }
-
+ 
     .about p {
         margin: 0;
         padding: 0 1em;
