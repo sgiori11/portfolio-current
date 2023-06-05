@@ -1,6 +1,6 @@
 import styles from './page.module.css'
 import HeroSection from './components/HeroSection';
-import Timelinetwo from './components/Timelinetwo';
+import Timelinetwo from './components/Timeline';
 import Sidebar from './components/Sidebar';
 import Projects from './components/Projects.js';
 import Skills from './components/Skills.js';

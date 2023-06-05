@@ -1,31 +1,58 @@
 'use client';
 
+import React, { useRef } from 'react';
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import styles from '../styles/Timeline.module.css';
-import React, { useEffect, useRef } from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
-import ImageParallax from './ImageParallax';
+import Image from 'next/image';
+import workExperience from '../workexp.json';
 
-export default function Timeline() {
-    //destructure scrollXProgress out of useScroll hook, which presents the value of horizontal scroll as a fraction between 0 and 1.
-    const ref = useRef(null);
-    const { scrollY } = useScroll({  container: ref });
- 
-  //transform scrollXProgress, which varies between 0 and 1, to scaleX, which varies between 0 and 100.
-  const scaleX = useSpring(scrollY, {
-    stiffness: 10,
-    damping: 300,
-    restDelta: 0.01
-  });
+function useParallax(value, distance) {
+  return useTransform(value, [0, 1], [-distance, distance]);
+}
+
+function ImageComponent({ data }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
+  const y = useParallax(scrollYProgress, 100);
 
   return (
-    <div id="scroll-container" className={styles.scrollContainer} ref={ref}>
-      {[1, 2, 3, 4].map((image) => (
-        <div>
-          <ImageParallax id={image} />
-        </div>
-      ))}
-      <motion.div className={styles.progress} style={{ scaleX }} />
-    </div>
+    <section className={styles.section}>
+      <div ref={ref}>
+        <Image
+          className={styles.img}
+          src={data.image}
+          alt={data.alt}
+          width={350}
+          height={450}
+          style={{objectFit: "cover"}}
+        />
+      </div>
+      <motion.div className={styles.contentSection} style={{ y }}>
+        <h2 className={styles.h2}>{data.place}</h2>
+        <p className={styles.jobTitle}>{data.jobtitle}</p>
+        <p className={styles.company}>{data.company}</p>
+        <p className={styles.years}>{data.years}</p>
+      </motion.div>
+    </section>
   );
 }
 
+function Timelinetwo() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
+  return (
+    <>
+      {workExperience.map((experience, index) => (
+        <ImageComponent key={index} data={experience} />
+      ))}
+      <motion.div className="progress" style={{ scaleX }} />
+    </>
+  );
+}
+
+export default Timelinetwo;
