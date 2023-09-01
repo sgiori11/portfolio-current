@@ -96,6 +96,10 @@
     color: var(--medium);
 }
 
+.about span a {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 1029px) {
 
 .projects h2, .skills h2, .about h2, .timeline h2 {

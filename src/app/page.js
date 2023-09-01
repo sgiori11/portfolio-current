@@ -58,7 +58,7 @@ export default function Home() {
           Thankfully, my biology degree has never held me back from technical or creative spaces. As an <span>experimentation specialist</span>, I get to use both my creative and scientific competencies to design, develop, and optimize websites and apps for clients.
           <br></br>
           <br></br>
-          When I’m not working, I enjoy <span>drawing</span>, <span>traveling around Italy</span>, and staring in admiration at my many <span>plants</span>—some of which can be found scattered around this site. I also take daily walks along the Navigli to compensate for my addiction to Italian cuisine.
+          When I’m not working, I enjoy <span><a href="https://www.layoverinitaly.com/" target="_blank">blogging</a></span>, <span>traveling around Italy</span>, and staring in admiration at my many <span>plants</span>—some of which can be found scattered around this site. I also take daily walks along the Navigli to compensate for my addiction to Italian cuisine.
           </p>
         </section>
 
