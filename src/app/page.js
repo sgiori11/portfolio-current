@@ -49,7 +49,7 @@ export default function Home() {
             </span>
           </h2>
           <p>
-          Hi! My name is Stephanie, and I’m a <span>27-year-old Californian</span> currently living in Milan, Italy :)
+          Hi! My name is Stephanie, and I’m a <span>26-year-old Californian</span> currently living in Milan, Italy :)
             <br></br>
             <br></br>
           After graduating from UC Davis with a <span>B.Sc. in Global Disease Biology</span>, I realized that I’d rather build stuff on my computer than dissect the dead.
