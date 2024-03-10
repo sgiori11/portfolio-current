@@ -1,0 +1,61 @@
+.container {
+    margin: 2rem 2rem 2rem 0;
+}
+
+.container h3 {
+    display: flex;
+    justify-content: space-between; /* Align title and icon on opposite ends */
+    align-items: center; /* Vertically align title and icon */
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.container p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 1rem;
+}
+
+.icon {
+    display: inline-block; /* Make the icon align correctly with the title */
+    margin-left: 12px; /* Add some space between the title and icon */
+    transition: transform 0.3s ease;
+}
+
+.iconOpen {
+    transform: rotate(45deg);
+  }
+
+.container p:first-of-type {
+    padding-top: 0;
+}
+
+.caseCont {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2rem 0;
+    column-gap: 1rem;
+}
+
+.caseCont p:last-of-type {
+    background-color: #F5F4FD;
+    border-radius: 6px;
+}
+
+.caseCont p span {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 750px) {
+    .caseCont {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    .caseCont img {
+        margin-bottom: 2rem;
+    }
+    
+}

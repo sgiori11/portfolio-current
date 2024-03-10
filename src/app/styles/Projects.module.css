@@ -1,13 +1,12 @@
 .gridCont {
-    margin: 0 1em 2em 50px;
-}
+    position: relative;
+} 
 
 .projectTitle {
     display: flex;
     align-items: baseline;
-    font-weight: 500;
-    font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-weight: 400;
     grid-area: title;
 }
 
@@ -27,155 +26,55 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 20px;
     grid-area: tags;
 }
 
 .tags span {
-    color: var(--medium);
-    font-weight: 800;
     margin-right: 12px;
-    font-size: 1.1em;
-}
-
-.projectSummary {
-    color: #2d3a4e;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 1.6;
-    text-align: justify;
-    max-width: 500px;
-    grid-area: summary;
+    color: #989898;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 
 .projectImg {
-    position: relative;
-    top: 25px;
-    left: -25px;
     transition: 0.3s ease;
     grid-area: image;
-}
-
-.projectImg::after {
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: 25px;
-    width: 250px;
-    height: 150px; 
-    background: var(--light);
-    z-index: -1;
-    border-radius: 5px;
-    transition: 0.3s ease;
+ 
 }
 
 .projectImg img {
     border-radius: 5px;
     object-fit: cover;
-    filter: grayscale(100%);
     transition: 0.3s ease;
 }
 
 .projectLinkCont {
     display: inline-grid;
-    padding: 1em;
-    column-gap: 10em;
+    padding: 1em 1em 1em 0;
     grid-template-columns: minmax(100px, 400px) 250px;
     grid-template-rows: auto;
     grid-template-areas: 
     "title image"
-    "tags image"
-    "summary image";
-}
-
-.projectLinkCont:hover {
-    /*outline: 1px solid #B3B6EE; */
-    border-radius: 2.5px;
-    background-color: rgba(226, 227, 254, 0.29);
-    
+    "tags image";
 }
 
 .projectLinkCont:hover .projectImg img {
-    filter: grayscale(0);
+    display: block;
     transition: 0.3s ease;
+
 }
 
-.projectLinkCont:hover .svg svg {
-    transform: translate(5px, -5px) scale(1.5);
-    transition: transform 0.3s ease;
+.projectImgOnHover {
+    position: absolute;
+    top: 0; 
+    right: 1rem; 
+    display: block;
+    z-index: 10; /* Ensure it's above other content */
 }
 
-@media only screen and (max-width: 1029px) {
-    .gridCont {
-        margin: 0 1em;
-        padding: 0;
-    }
 
-    .projectLinkCont {
-        display: inline-grid;
-        padding: 1em;
-        column-gap: 10em;
-        grid-template-columns: minmax(100px, 400px) 250px;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "title image"
-        "tags image"
-        "summary image";
-    }
-
-    .projectLinkCont {
-        display: inline-grid;
-        padding: 0;
-        grid-template-columns: 1fr;
-        column-gap: 0;
-        grid-template-areas: 
-        "image"
-        "title"
-        "tags"
-        "summary";
-    }
-
-    .projectSummary {
-        margin-bottom: 5em;
-        text-align: left;
-    }
-    
-    .projectImg {
-        top: 25px;
-        left: 25px;
-        margin-bottom: 3em;
-        width: 250px;
-    }
-    
-    .projectImg::after {
-        top: -25px;
-        left: -25px;
-    }
-
-    .projectLinkCont:hover {
-        background-color: inherit;
-    }
-    
+@media only screen and (max-width: 725px) {
     .projectLinkCont:hover .projectImg img {
-        filter: none;
-    }
-    
-    .projectLinkCont:hover .svg svg {
-        transform: none;
-       
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    .projectTitle {
-        font-size: 1.7em;
-    }
-
-    .tags span {
-        font-size: 1em;
-    }
-
-    .projectSummary {
-        max-width: 300px;
+        display: none;
     }
 }

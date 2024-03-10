@@ -5,7 +5,7 @@ import Image from 'next/image'
 import SoftSkills from '/public/softskills.svg';
 import { motion } from "framer-motion";
 
-
+ 
 const containerVariants = {
     offscreen: {
       opacity: 0, 
@@ -40,48 +40,35 @@ const containerVariants = {
 export default function Skills() {
 
  return (
-        <div>
-            <div className={styles.skillsCont}>
-              <span>React</span>
-              <span>Next.js</span>
-              <span>Javascript</span>
-              <span>Framer Motion</span>
-              <span>CSS</span>
-              <span>SASS</span>
-              <span>Webflow</span>
-              <span>Google Analytics</span>
-              <span>Amplitude</span>
-              <span>GTM</span>
-              <span>UI/UX Design</span>
-              <span>Figma</span>
+        <section className={styles.grid}>
+            <div>
+              <p>UX Research Methods</p>
               <span>A/B Testing</span>
+              <span>Data Analysis</span>
+              <span>Heuristic Evaluations</span>
+              <span>Voice of Customer Surveys</span>
+              <span>Screen Recordings</span>
+              <span>Usability Testing</span>
+              <span>Card Sorting</span>
             </div>
-            <div className={styles.skillsCont + ' ' + styles.softSkills}>
-          <Image 
-                src={SoftSkills}
-                alt="A label and arrow pointing to softer skills."
-                width={180}
-                className={styles.softSkillsImg}
-            />
-            <motion.div className={styles.softSkillsCont} variants={containerVariants} initial="offscreen" whileInView="onscreen">
-              
-              <motion.span 
-                variants={skillVariants}>
-                  Creative
-              </motion.span>
-  
-              <motion.span 
-                variants={skillVariants}>
-                  Open-minded
-              </motion.span>
-  
-              <motion.span 
-                variants={skillVariants}>
-                  Resourceful
-              </motion.span>
-            </motion.div>
+            <div>
+              <p>Tools</p>
+              <span>React + Nextjs</span>
+              <span>S(CSS)</span>
+              <span>Git</span>
+              <span>Figma</span>
+              <span>Webflow</span>
+              <span>Optimizely</span>
+              <span>Google Analytics</span>
+              <span>Midjourney</span>
             </div>
-        </div>
+            <div>
+              <p>Languages</p>
+              <span>English (Native)</span>
+              <span>Italian (B1 and improving)</span>
+              <span>Norwegian (B1 and forgetting)</span>
+            </div>
+        </section>
 
     )
 };

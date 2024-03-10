@@ -1,50 +1,29 @@
-.pageContent {
-    margin-top: 5em;
-}
 
-.projects h2, .skills h2, .about h2, .timeline h2 {
-    padding-left: 1em;
-}
 
 .projects {
     grid-area: projects;
+}
+
+.caseStudies {
+    grid-area: cases;
 }
 
 .projects span {
     display: block;
 }
 
-.skills {
-    grid-area: skills;
-}
-
-.about {
-    grid-area: about;
-}
-
-.timeline {
-    grid-area: timeline;
-    overflow: hidden;
-}
-
-.timelineContainer {
-    width: 100%; /* Set the width of the timeline container to 100% of its parent */
-    margin: 1em 1em 2em 50px;
-
-}
-
 
 .footer {
     color: #738097;
-    font-weight: 300;
-    font-size: 0.9em;
+    font-weight: 400;
+    font-size: 0.75rem;
     margin: 5em 0 3em 0;
     display: flex;
     justify-content: center;
     grid-area: footer;
 }
 
-.projects, .skills, .about, .timeline {
+.projects, .caseStudies {
     border-right: 1px solid #bfc4cbfb;
 
 }
@@ -74,48 +53,21 @@
     grid-template-columns: 1fr minmax(0px, 150px);
     row-gap: 0em;
     grid-template-areas: 
+    "cases sidebar"
     "projects sidebar"
-    "skills sidebar"
-    "timeline sidebar"
-    "about sidebar"
     "footer footer";
-}
-
-
-.about p {
-    margin: 1em 1em 2em 50px;
-    max-width: 700px;
-    color: #2d3a4e;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 1.7;
-}
-
-.about p span {
-    font-weight: 600;
-    color: var(--medium);
-}
-
-.about span a {
-    text-decoration: underline;
 }
 
 @media only screen and (max-width: 1029px) {
 
-.projects h2, .skills h2, .about h2, .timeline h2 {
-    font-size: 2.5em;
-    padding-left: inherit;
-}
 
  .pageContent {
     grid-template-columns: 1fr;
     column-gap: 0;
     row-gap: 0;
     grid-template-areas: 
+    "cases"
     "projects"
-    "skills"
-    "timeline"
-    "about"
     "sidebar"
     "footer";
   }
@@ -140,38 +92,12 @@
 .sidebar a:hover {
     transform: translateY(-7px);
     transition: transform 0.3s ease;
-}
-
-.projects, .skills, .about, .timeline {
-    border-right: none;  
-    margin: 0 1em;
-}
-
-.about p {
-    margin: 0;
-    padding: 1em;
-}
+ }
 
 }
 
 @media only screen and (max-width: 500px) {
-    .timelineContainer {
-        width: 100%; /* Set the width of the timeline container to 100% of its parent */
-        margin: 0 1em;
-    
-    }
-    .projects h2, .skills h2, .about h2, .timeline h2 {
-        font-size: 2em;
-        padding-left: inherit;
-    }
-
     .footer {
         font-size: 12px;
     }
- 
-    .about p {
-        margin: 0;
-        padding: 0 1em;
-    }
-
 }
