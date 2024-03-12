@@ -72,10 +72,15 @@
     .container a {
         display: flex;
         justify-content: flex-start;
-        font-size: 13px;
+        font-size: 0.813rem;
+        font-weight: 500;
         border: none;
         padding: 0;
         padding-right: 2rem;
+    }
+
+    .container a:hover {
+        border-radius: 2px;
     }
 
     .container a:after {

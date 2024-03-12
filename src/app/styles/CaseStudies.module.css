@@ -36,7 +36,6 @@
     font-family: "JetBrains Mono", monospace;
     color: #808080;
     font-size: 0.6rem !important;
-    padding-left: 0 !important;
     grid-auto-flow: row dense;
 }
 
@@ -87,13 +86,6 @@
 
 .caseCont p span {
     font-weight: 600;
-}
-
-@media only screen and (max-width: 1029px) {
-
-    .container {
-        margin: 2rem 0 2rem 0;
-    }
 }
 
 @media only screen and (max-width: 750px) {
