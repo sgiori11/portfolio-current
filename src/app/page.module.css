@@ -36,6 +36,7 @@
     grid-template-rows: repeat(4, 70px);
     align-self: flex-start;
     justify-self: center;
+    margin-top: 2em;
 }
 
 .sidebar a {
@@ -60,6 +61,15 @@
 
 @media only screen and (max-width: 1029px) {
 
+    .projects, .caseStudies {
+        border-right: none;
+    
+    }
+
+    .container {
+        margin: 2rem 0 2rem 0;
+        border: 1px solid blue;
+    }
 
  .pageContent {
     grid-template-columns: 1fr;

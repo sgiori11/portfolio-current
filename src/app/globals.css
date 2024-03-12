@@ -32,9 +32,9 @@ body {
    vertical-align: bottom;
 }
 
-body, body a {
-  cursor: url('/cursor.png'), auto;
-}
+ body, body a {
+ cursor: url('/cursor.svg'), auto; 
+} 
 
 h1 {
   font-weight: 500;

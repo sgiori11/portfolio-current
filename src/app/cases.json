@@ -1,20 +1,20 @@
 [
     {   
         "id": 0,
-        "name": "Mobile Form Optimization",
+        "name": "Mobile Form UX Optimization",
         "case": "A European home improvement store sought to increase their online appointment bookings.",
         "description": "Upon analyzing the booking form data in Google Analytics, we found that mobile users were submitting the form at a -15% lower rate than desktop users. A heuristic evaluation of the form unveiled several mobile UX issues. \n\nNoting the analytics drop-off data and our heuristic evaluation findings, I designed and developed a mobile-first version of the form featuring persuasive copy, entry fields visible above the fold, and a clear call to action button. An A/B test was then carried out on the booking page.",
         "results": "The variant led to a statistically significant +21% increase in mobile form submissions and is projected to bring in an additional €7M in annual revenue.",
-        "image": "/mobileform.png",
+        "image": "/caseone.png",
         "alt": "An old form in the background and a new variant of the form in the foreground."
     },
 
     {   
         "id": 1,
         "name": "Increasing Mobile App Download Rates",
-        "case": "A European home improvement store sought to increase their online appointment bookings.",
-        "description": "Upon analyzing the booking form data in Google Analytics, we found that mobile users were submitting the form at a -15% lower rate than desktop users. A heuristic evaluation of the form unveiled several mobile UX issues. \n\nNoting the analytics drop-off data and our heuristic evaluation findings, I designed and developed a mobile-first version of the form featuring persuasive copy, entry fields visible above the fold, and a clear call to action button. An A/B test was then carried out on the booking page.",
-        "results": "The variant led to a statistically significant +21% increase in mobile form submissions and is projected to bring in an additional €7M in annual revenue.",
+        "case": "An American dev agency wanted to optimize their Apple and Google Play store app listing pages.",
+        "description": "With only 8 weeks of budget for ASO and advertising spend, we had to move fast. A competitor analysis was carried out on mobile apps in the same category to understand how competitors were discussing and visualizing their gameplay.  Immediately after launch, we began analyzing user reviews, social media sentiments, and app analytics data to inform our hypotheses for how to improve the listing pages.  \n\nBased on our findings, we deployed two app store A/B tests simultaneously—one on the Apple app store, and one on the Google Play store. The iOS A/B test changed the app icon from an abstract pattern to an image of users’ most-mentioned characters. The Android A/B test targeted the default graphics, showcasing UI snippets of in-game choices that users could make for each character.",
+        "results": "The iOS icon test led to a significant increase in app store listing pageviews, and both tests showed consistent upward trends in app download rates. Both variants were implemented to maximize download rates for the remaining media flight.",
         "image": "/mobileform.png",
         "alt": "An old form in the background and a new variant of the form in the foreground."
     },
@@ -22,10 +22,10 @@
     {
         "id": 2,
         "name": "SaaS Startup Heuristic Evaluation",
-        "case": "A European home improvement store sought to increase their online appointment bookings.",
-        "description": "Upon analyzing the booking form data in Google Analytics, we found that mobile users were submitting the form at a -15% lower rate than desktop users. A heuristic evaluation of the form unveiled several mobile UX issues. \n\nNoting the analytics drop-off data and our heuristic evaluation findings, I designed and developed a mobile-first version of the form featuring persuasive copy, entry fields visible above the fold, and a clear call to action button. An A/B test was then carried out on the booking page.",
-        "results": "The variant led to a statistically significant +21% increase in mobile form submissions and is projected to bring in an additional €7M in annual revenue.",
-        "image": "/mobileform.png",
+        "case": "A Nordic SaaS startup sought a heuristic evaluation of their website to improve sign-up rates and drive leads.",
+        "description": "After recruiting a fellow UX researcher and optimization specialist, both of us completed a heuristic evaluation of the website and then reconvened to discuss and consolidate our findings. Special attention was paid to the booking funnel and pricing pages, since these were crucial to the success of the business.",
+        "results": "A 30-page deck was delivered and presented to the client featuring key funnel issues, bugs, expert UX recommendations, and alternative UI mockups. The recommendations were warmly received and quickly actioned upon by the internal development team.",
+        "image": "/case3.png",
         "alt": "An old form in the background and a new variant of the form in the foreground."
     }
 ]

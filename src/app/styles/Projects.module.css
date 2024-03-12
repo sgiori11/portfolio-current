@@ -77,4 +77,8 @@
     .projectLinkCont:hover .projectImg img {
         display: none;
     }
+
+    .tags {
+        flex-wrap: nowrap;
+    }
 }
