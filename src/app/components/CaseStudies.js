@@ -84,6 +84,9 @@ export default function CaseStudies({ caseStudy }) {
                 style={{objectFit: "contain"}}
               />
             </motion.div>
+            <motion.p variants={itemVariants} className={styles.features}>
+              {caseStudy.features}
+            </motion.p>
             <motion.p variants={itemVariants}>
               <span>Case: </span>
               {caseStudy.case}
