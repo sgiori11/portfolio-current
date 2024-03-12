@@ -1,0 +1,84 @@
+.container {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    border-right: 1px solid #bfc4cbfb;
+    padding-right: 1rem;
+}
+
+
+.container h2 {
+    display: block;
+    width: 100%;
+}
+
+.container h2 span {
+    border: 1px solid rgb(19, 167, 200);
+    border-radius: 2rem;
+    padding: 0.1rem 0.5rem;
+    margin-left: 2px;
+}
+
+.container a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border: 1px solid rgb(19, 167, 200);
+    border-radius: 1rem;
+    padding: 0.4rem 1rem;
+    background-color: none;
+    transition: background-color 0.3s ease;
+}
+
+.container a:after {
+    content: " ";
+    position: absolute;
+    background: url('/greyArrow.svg') no-repeat center; /* Center the background image */
+    background-size: contain; /* Ensure the image is contained within the element */
+    width: 14px;
+    height: 14px;
+    right: 0.7rem; /* Adjust this value to move the arrow left or right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); 
+    display: none;
+}
+
+.container a span {
+    font-style: italic;
+}
+
+.container a:hover {
+    background-color: rgb(217, 248, 255);
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+@media only screen and (max-width: 1029px) {
+    .container {
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        display: flex; 
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .container a {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 13px;
+        border: none;
+        padding: 0;
+        padding-right: 2rem;
+    }
+
+    .container a:after {
+        display: block;
+    }
+}
