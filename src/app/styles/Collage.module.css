@@ -72,11 +72,12 @@
     .container a {
         display: flex;
         justify-content: flex-start;
-        font-size: 0.813rem;
+        font-size: 0.8rem;
         font-weight: 500;
         border: none;
         padding: 0;
         padding-right: 2rem;
+        color: grey;
     }
 
     .container a:hover {

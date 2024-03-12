@@ -8,6 +8,7 @@
     margin-bottom: 5px;
     font-weight: 400;
     grid-area: title;
+    font-size: 1rem;
 }
 
 .svg {
