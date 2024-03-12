@@ -13,10 +13,10 @@
         "id": 1,
         "name": "Increasing Mobile App Download Rates",
         "case": "An American dev agency wanted to optimize their Apple and Google Play store app listing pages.",
-        "description": "With only 8 weeks of budget for ASO and advertising spend, we had to move fast. A competitor analysis was carried out on mobile apps in the same category to understand how competitors were discussing and visualizing their gameplay.  Immediately after launch, we began analyzing user reviews, social media sentiments, and app analytics data to inform our hypotheses for how to improve the listing pages.  \n\nBased on our findings, we deployed two app store A/B tests simultaneously—one on the Apple app store, and one on the Google Play store. The iOS A/B test changed the app icon from an abstract pattern to an image of users’ most-mentioned characters. The Android A/B test targeted the default graphics, showcasing UI snippets of in-game choices that users could make for each character.",
+        "description": "With only 8 weeks of client budget for ASO and advertising spend, we had to move fast. A competitor analysis was carried out on mobile apps in the same category to understand how other games were discussing and visualizing their gameplay.  Immediately after launch, we began analyzing user reviews, social media sentiments, and app analytics data to inform our hypotheses for how to improve the listing pages.  \n\nBased on our findings, we deployed two app store A/B tests simultaneously—one on the Apple app store, and one on the Google Play store. The iOS A/B test changed the app icon from an abstract pattern to an image of users’ most-mentioned characters. The Android A/B test targeted the default graphics, showing more informative UI snippets of in-game choices that users could make for each character.",
         "results": "The iOS icon test led to a significant increase in app store listing pageviews, and both tests showed consistent upward trends in app download rates. Both variants were implemented to maximize download rates for the remaining media flight.",
-        "image": "/mobileform.png",
-        "alt": "An old form in the background and a new variant of the form in the foreground."
+        "image": "/case2.png",
+        "alt": "A grey iOS app icon in the background and a new variant in the foreground."
     },
 
     {
@@ -26,6 +26,6 @@
         "description": "After recruiting a fellow UX researcher and optimization specialist, both of us completed a heuristic evaluation of the website and then reconvened to discuss and consolidate our findings. Special attention was paid to the booking funnel and pricing pages, since these were crucial to the success of the business.",
         "results": "A 30-page deck was delivered and presented to the client featuring key funnel issues, bugs, expert UX recommendations, and alternative UI mockups. The recommendations were warmly received and quickly actioned upon by the internal development team.",
         "image": "/case3.png",
-        "alt": "An old form in the background and a new variant of the form in the foreground."
+        "alt": "A screenshot from the heuristic analysis, showing UI/UX improvements that could be made to the hero section of the homepage."
     }
 ]

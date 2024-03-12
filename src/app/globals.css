@@ -23,7 +23,7 @@ html {
 
 html,
 body {
-  font-family: var(--font-oswald);
+  font-family: var(--font-montserrat);
   font-size: 1.125rem;
   font-weight: 300;
    background: white;
@@ -60,6 +60,26 @@ a {
 
 @media only screen and (max-width: 1100px) {
   body {
-    padding: 2rem;
- }
-};
+    padding: 2rem; /* This will apply when the screen is 1100px or smaller */
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  body {
+    padding: 1rem; /* This will apply when the screen is 440px or smaller */
+  }
+
+  h1 {
+    font-size: 1.05rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+

@@ -81,4 +81,15 @@
     .tags {
         flex-wrap: nowrap;
     }
+
+    .projectLinkCont {
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+@media only screen and (max-width: 440px) {
+    .projectTitle {
+        font-size: 1rem;
+    }
+  }

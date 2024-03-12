@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: "Stephanie Giori - Frontend Dev & Experimentation Specialist",
-  description: "Stephanie Giori's frontend development & experimentation portfolio",
+  description: "A CRO, UXR, and development portfolio",
   keywords: ["UX", "Design", "React", "JavaScript", "CRO", "frontend development", "web development", "conversion rate optimization", "experimentation"],
   openGraph: {
     title: 'Stephanie Giori - Frontend Dev',
@@ -31,7 +31,7 @@ export const metadata = {
 const montserrat = Montserrat({
   style: ['normal'],
   subsets: ['latin'],
-  variable: '--font-oswald',
+  variable: '--font-montserrat',
   display: 'swap',
 });
  
