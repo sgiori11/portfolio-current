@@ -20,7 +20,6 @@
             "description": "A multipage website for one of Scandinavia's leading course providers. Based on UI mockups provided by the client, I led the frontend development of the site with support from two fullstack devs. This project was managed by my previous agency, Fullstakk Marketing.",
             "tags": [
                 "Webflow",
-                "CSS",
                 "JavaScript"
             ],
             "image": "/confexx.png",
@@ -43,16 +42,15 @@
 
         {
             "id": 2,
-            "name": "Tetris",
+            "name": "Layover In Italy",
             "description": "This was my first JavaScript game, and it provided an excellent foundation for manipulating the DOM. I was inspired by Ania Kubow’s tutorial during the #100DaysOfCode challenge, and I’ve been active on tech Twitter ever since.",
             "tags": [
-                "HTML",
-                "CSS",
-                "JavaScript"
+                "Ghost CMS",
+                "SEO"
             ],
-            "image": "/tetriss.png",
-            "alt": "Screenshot of a Tetris game.",
-            "link": "https://codepen.io/stephsstar/pen/wvKPpgd"
+            "image": "/layoverinitaly.png",
+            "alt": "Screenshot of a blog about Italy.",
+            "link": "https://www.layoverinitaly.com"
         }
 
     ]

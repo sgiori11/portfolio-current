@@ -1,11 +1,11 @@
 import './globals.css'
-import { Inter, Oswald } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
 
 
 export const metadata = {
   title: "Stephanie Giori - Frontend Dev & Experimentation Specialist",
-  description: "Stephanie Giori's frontend development & experimentation portfolio",
+  description: "A CRO, UXR, and development portfolio",
   keywords: ["UX", "Design", "React", "JavaScript", "CRO", "frontend development", "web development", "conversion rate optimization", "experimentation"],
   openGraph: {
     title: 'Stephanie Giori - Frontend Dev',
@@ -27,15 +27,11 @@ export const metadata = {
   },
 };
  
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-});
  
-const oswald = Oswald({
+const montserrat = Montserrat({
+  style: ['normal'],
   subsets: ['latin'],
-  variable: '--font-oswald',
+  variable: '--font-montserrat',
   display: 'swap',
 });
  
@@ -43,7 +39,7 @@ const oswald = Oswald({
 export default function RootLayout({ children }) {
   return ( <>
     <html lang="en">
-      <body className={`${inter.variable} ${oswald.variable}`}>
+      <body className={montserrat.variable}>
         {children}
         <Analytics />
       </body>

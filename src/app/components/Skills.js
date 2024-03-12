@@ -1,87 +1,57 @@
 'use client';
 
-import styles from '../styles/Skills.module.css';
-import Image from 'next/image'
-import SoftSkills from '/public/softskills.svg';
 import { motion } from "framer-motion";
+import styles from '../styles/Skills.module.css';
+import Image from 'next/image';
+import SoftSkills from '/public/softskills.svg';
 
 
-const containerVariants = {
-    offscreen: {
-      opacity: 0, 
-      transition: {
-        when: "afterChildren",
-      },
-    },
-    onscreen: {
+export default function Skills() {
+  const itemVariants = {
+    hidden: { opacity: 0, y: 150 },
+    visible: {
       opacity: 1,
+      y: 0,
       transition: {
-        staggerChildren: 0.3,
-        when: "beforeChildren",
-      },
-    }
-  };
-  
-  const skillVariants = {
-    offscreen: {
-      opacity: 0, 
-      scale: 0.5
-    },
-    onscreen: {
-      opacity: 1, 
-      scale: 1,
-      transition: {
-          type: "spring", 
-          stiffness: 100 
+        type: "tween", // Using tween for a more controlled duration without spring physics
+        duration: 0.5, // Increase duration to slow down the animation
+        ease: "easeOut" // This can be any easing function: "linear", "easeIn", "easeOut", "easeInOut", etc.
       }
     }
   };
 
-export default function Skills() {
-
- return (
-        <div>
-            <div className={styles.skillsCont}>
-              <span>React</span>
-              <span>Next.js</span>
-              <span>Javascript</span>
-              <span>Framer Motion</span>
-              <span>CSS</span>
-              <span>SASS</span>
-              <span>Webflow</span>
-              <span>Google Analytics</span>
-              <span>Amplitude</span>
-              <span>GTM</span>
-              <span>UI/UX Design</span>
-              <span>Figma</span>
-              <span>A/B Testing</span>
-            </div>
-            <div className={styles.skillsCont + ' ' + styles.softSkills}>
-          <Image 
-                src={SoftSkills}
-                alt="A label and arrow pointing to softer skills."
-                width={180}
-                className={styles.softSkillsImg}
-            />
-            <motion.div className={styles.softSkillsCont} variants={containerVariants} initial="offscreen" whileInView="onscreen">
-              
-              <motion.span 
-                variants={skillVariants}>
-                  Creative
-              </motion.span>
-  
-              <motion.span 
-                variants={skillVariants}>
-                  Open-minded
-              </motion.span>
-  
-              <motion.span 
-                variants={skillVariants}>
-                  Resourceful
-              </motion.span>
-            </motion.div>
-            </div>
-        </div>
-
-    )
-};
+  return (
+    <motion.section className={styles.grid}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }} // Customize the trigger point
+      transition={{ type: "spring", duration: 0.9, bounce: 0.1,  ease: "easeIn" }}
+    >
+      <motion.div variants={itemVariants}>
+        <p>UX Research Methods</p>
+        {/* Wrap each item with motion.span and apply the variants */}
+        {["A/B Testing", "Data Analysis", "Heuristic Evaluations", "Voice of Customer Surveys", "Screen Recordings", "Usability Testing", "Card Sorting"].map((skill, index) => (
+          <motion.span key={index} variants={itemVariants}>
+            {skill}
+          </motion.span>
+        ))}
+      </motion.div>
+      <motion.div variants={itemVariants}>
+        <p>Tools</p>
+        {["React + Nextjs", "S(CSS)", "Git", "Figma", "Webflow", "Optimizely", "Google Analytics", "Midjourney"].map((tool, index) => (
+          <motion.span key={index} variants={itemVariants}>
+            {tool}
+          </motion.span>
+        ))}
+      </motion.div>
+      <motion.div variants={itemVariants}>
+        <p>Languages</p>
+        {["English (Native)", "Italian (B1 and improving)", "Norwegian (B1 and forgetting)"].map((language, index) => (
+          <motion.span key={index} variants={itemVariants}>
+            {language}
+          </motion.span>
+        ))}
+      </motion.div>
+    </motion.section>
+  );
+}

@@ -1,20 +1,33 @@
-.skillsCont {
+.grid {
+    padding: 3.5rem 0;
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
-    margin: 1em 1em 2em 50px;
-}
+    justify-content: space-between;
+    gap: 2rem;
+    background-size: 20px 20px; /* Size of the squares */
+    background-image: 
+      linear-gradient(to right, #F6F6F6 1px, transparent 1px),
+      linear-gradient(to bottom, #F6F6F6 1px, transparent 1px);
+  }
+ 
+  .grid div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 
-.skillsCont span {
-    background-color: #abaeff46;
-    border-radius: 5px;
-    padding: 1em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    color: var(--medium);
-    font-weight: 400;
-    font-size: 1.1em;
-}
+  }
+  
+  .grid div p {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .grid span {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #808080;
+  }
 
 .softSkillsCont {
     grid-area: softSkills;
@@ -53,7 +66,7 @@
     .skillsCont {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 1em 0 1em;
+        
       }
     
       .skillsCont span {
@@ -69,7 +82,7 @@
         "img softSkills";
     }
     
-    .softSkills div {
+    .softSkills section {
         display: flex;
         align-self: flex-end;
         flex-wrap: wrap;
@@ -85,7 +98,7 @@
 @media only screen and (max-width: 500px) {
 
     .skillsCont {
-        margin: 1em;
+        
       }
 
     .softSkillsImg  {
