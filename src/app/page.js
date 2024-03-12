@@ -7,7 +7,6 @@ import Skills from './components/Skills.js';
 import data from './projectsdata.json';
 import cases from './cases.json';
 import Image from 'next/image';
-import monstera from '/public/monstera.svg';
 
 
 

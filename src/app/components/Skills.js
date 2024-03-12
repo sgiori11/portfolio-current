@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import styles from '../styles/Skills.module.css';
 import Image from 'next/image';
-import SoftSkills from '/public/softskills.svg';
 
 
 export default function Skills() {

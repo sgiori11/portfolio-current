@@ -2,9 +2,6 @@ import Image from 'next/image';
 import styles from '../styles/HeroSection.module.css';
 import flowers from '/public/flowers.png';
 
-
-
-
 export default function HeroSection() {
 
     return (
