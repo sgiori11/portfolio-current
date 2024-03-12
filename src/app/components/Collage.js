@@ -5,7 +5,7 @@ export default function Collage() {
     <section className={styles.container}>
       <h2>Steph in a B<span>link</span></h2>
        <a href="https://www.youtube.com/watch?v=xhobcj2K9v4" target="_blank">Determinism - Robert Sapolsky</a>
-       <a href="https://bookshop.org/a/102159/9780465020119" target="_blank"><span>Love's Executioner&nbsp;</span> - Irvin Yalom</a>
+       <a href="https://bookshop.org/a/102159/9780465020119" target="_blank"><span>Love&apos;s Executioner&nbsp;</span> - Irvin Yalom</a>
        <a href="https://apps.apple.com/it/app/guitartuna-tuner-chords-tabs/id527588389?l=en-GB" target="_blank">GuitarTuna</a>
        <a href="https://www.youtube.com/watch?v=mKCieTImjvU" target="_blank">Cozy Fireplace 4K</a>
        <a href="https://open.spotify.com/show/20Gf4IAauFrfj7RBkjcWxh?si=1366e0ef270449f2" target="_blank">Hidden Brain Podcast</a>
