@@ -4,12 +4,14 @@ export default function Collage() {
   return(
     <section className={styles.container}>
       <h2>Steph in a B<span>link</span></h2>
+      <a href="https://www.youtube.com/channel/UCqFzWxSCi39LnW1JKFR3efg" target="_blank">Saturday Night Live</a>
        <a href="https://www.youtube.com/watch?v=xhobcj2K9v4" target="_blank">Determinism - Robert Sapolsky</a>
        <a href="https://bookshop.org/a/102159/9780465020119" target="_blank"><span>Love&apos;s Executioner&nbsp;</span> - Irvin Yalom</a>
        <a href="https://apps.apple.com/it/app/guitartuna-tuner-chords-tabs/id527588389?l=en-GB" target="_blank">GuitarTuna</a>
        <a href="https://www.youtube.com/watch?v=mKCieTImjvU" target="_blank">Cozy Fireplace 4K</a>
        <a href="https://open.spotify.com/show/20Gf4IAauFrfj7RBkjcWxh?si=1366e0ef270449f2" target="_blank">Hidden Brain Podcast</a>
        <a href="https://www.edx.org/learn/italian/wellesley-college-italian-language-and-culture-intermediate-2023-2024" target="_blank">Intermediate Italian - EdX</a>
+       <a href="https://www.youtube.com/@LastWeekTonight" target="_blank">LastWeekTonight</a>
        <a href="https://bookshop.org/a/102159/9780060928513" target="_blank"><span>Lying on the Couch&nbsp;</span> - Irvin Yalom</a>
        <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank">PubMed</a>
        <a href="https://fullstackopen.com/en/" target="_blank">Full Stack Open</a>
