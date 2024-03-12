@@ -14,7 +14,7 @@
     position: relative;
     top: -2px;
     margin-left: 10px;
-    
+     
 }
 
 .svg svg {
@@ -74,6 +74,10 @@
 
 
 @media only screen and (max-width: 725px) {
+    .projectImgOnHover {
+       display: none;
+    }
+
     .projectLinkCont:hover .projectImg img {
         display: none;
     }
