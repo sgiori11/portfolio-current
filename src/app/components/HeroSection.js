@@ -7,7 +7,7 @@ export default function HeroSection() {
     return (
       <section className={styles.container}>
         <span className={styles.open}>
-         <a href="mailto:stephaniegiori9@gmail.com">let's collab</a>
+         <a href="mailto:stephaniegiori9@gmail.com">let&apos;s collab</a>
         </span>
 
         <div className={styles.headingCont}>
