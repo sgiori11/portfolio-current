@@ -15,7 +15,7 @@ export default function HeroSection() {
 
             Hi, I&apos;m Stephanie — a Californian based in Milan <span className={styles.span}>Oslo</span>. I have four years of experience within CRO, UXR, and front-end development.<br></br>
 
-            <br></br>Currently using my biology degree to optimize websites and apps at <a href="https://media.monks.com" target="_blank">Media Monks</a>.
+            <br></br>Currently using my biology degree to optimize websites and apps at <a href="https://media.monks.com/solutions/digital-experience-optimization" target="_blank">Media Monks</a>.
             </h1>
             <div>
             <svg className={styles.arrow} width="41" height="192" viewBox="-6 -6 89 204" fill="none" xmlns="http://www.w3.org/2000/svg">

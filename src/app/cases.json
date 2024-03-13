@@ -2,9 +2,9 @@
     {   
         "id": 0,
         "name": "Mobile Form UX Optimization",
-        "case": "A European home improvement store sought to increase their online appointment bookings.",
+        "case": "A UK home improvement retailer sought to increase their online appointment bookings.",
         "description": "Upon analyzing the booking form data in Google Analytics, we found that mobile users were submitting the form at a -15% lower rate than desktop users. A heuristic evaluation of the form unveiled several mobile UX issues. \n\nNoting the analytics drop-off data and our heuristic evaluation findings, I designed and developed a mobile-first version of the form featuring persuasive copy, entry fields visible above the fold, and a clear call to action button. An A/B test was then carried out on the booking page.",
-        "results": "The variant led to a statistically significant +21% increase in mobile form submissions and is projected to bring in an additional €7M in annual revenue.",
+        "results": "The variant led to a statistically significant +21% increase in mobile form submissions and a -9.5% decrease in abandonment. It is projected to bring in an additional £6.4M in annual revenue.",
         "image": "/caseone.png",
         "features": "Year: 2023\nRole: Optimization Specialist",
         "alt": "An old form in the background and a new variant of the form in the foreground."
