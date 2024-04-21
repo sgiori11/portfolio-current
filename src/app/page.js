@@ -20,13 +20,13 @@ export default function Home() {
       <section className={styles.pageContent}>
         <Sidebar className={styles.sidebar} />
         <section className={styles.caseStudies}>
-          <h2>Case Studies</h2>
+          <h2>CRO</h2>
           {cases.map((caseStudy => (
             <CaseStudies key={caseStudy.id} caseStudy={caseStudy} />
            )))}
         </section>
         <section className={styles.projects}>
-          <h2>Dev Projects</h2>
+          <h2>DEV</h2>
           {data.map((project => (
             <Projects key={project.id} project={project} />
           )))}

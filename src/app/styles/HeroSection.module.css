@@ -8,7 +8,7 @@
 }
 
 .container .info {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--grey);
 }
@@ -31,7 +31,7 @@
     display: flex;
     align-items: center; /* Align text and dots vertically */
     height: 36px; /* Ensures proper alignment - adjust height as necessary */
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--grey);
 }
