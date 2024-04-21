@@ -13,7 +13,7 @@ export default function HeroSection() {
 
         <div className={styles.headingCont}>
             <h1 className={styles.h1}>
-            I'm an Italian-American designer and developer based in Milan <span className={styles.span}>Oslo</span>. 
+            I&apos;m an Italian-American designer and developer based in Milan <span className={styles.span}>Oslo</span>. 
             <br></br>
             <br></br>Currently using my biology degree to optimize websites and apps at <a href="https://media.monks.com/solutions/digital-experience-optimization" target="_blank">Media Monks</a>.
             </h1>
