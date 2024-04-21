@@ -83,6 +83,7 @@
 
     .container a:hover {
         border-radius: 2px;
+        background-color: none;
     }
 
     .container a:after {

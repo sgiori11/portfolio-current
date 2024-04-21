@@ -3,7 +3,7 @@ import styles from '../styles/Collage.module.css';
 export default function Collage() {
   return(
     <section className={styles.container}>
-      <h2>Steph in a B<span>link</span></h2>
+      <h2>STEPH IN A B<span>LINK</span></h2>
       <a href="https://www.youtube.com/channel/UCqFzWxSCi39LnW1JKFR3efg" target="_blank">Saturday Night Live</a>
        <a href="https://www.youtube.com/watch?v=xhobcj2K9v4" target="_blank">Determinism - Robert Sapolsky</a>
        <a href="https://bookshop.org/a/102159/9780465020119" target="_blank"><span>Love&apos;s Executioner&nbsp;</span> - Irvin Yalom</a>
@@ -22,7 +22,6 @@ export default function Collage() {
        <a href="https://www.sakuraofamerica.com/product/pigma-micron/" target="_blank">Sakura Micron Pens</a>
        <a href="https://bookshop.org/a/102159/9781501197277" target="_blank"><span>The Courage to Be Disliked&nbsp;</span> - Ichiro K.</a>
        <a href="https://www.websitecarbon.com" target="_blank">Website Carbon Checker</a>
-       <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi3o7Onxe-EAxXZcvEDHTn3CtkQFnoECA8QAQ&url=https%3A%2F%2Fengagement2017.files.wordpress.com%2F2017%2F03%2Fnietzsche_on-the-uses-and-disadvantages-of-history-for-life.pdf&usg=AOvVaw3sp9mC1oU9fVr3IacRQrw2&opi=89978449" target="_blank"><span>Untimely Meditations&nbsp;</span> - Nietzsche</a>
     </section>
   )
 }
