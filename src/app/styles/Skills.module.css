@@ -35,7 +35,10 @@
     transform: translateX( -50%);
     height: 100%;
     width: 100vw !important;
-    background: #F3F6FA;
+    background-image: 
+    linear-gradient(90deg,  rgba(240, 240, 240, 0.5) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(240, 240, 240, 0.5) 1px, transparent 1px);
+  background-size: 20px 20px;
     z-index: 0;
   }
 
