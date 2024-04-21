@@ -1,12 +1,12 @@
 .container {
-    margin: 1rem 2rem 1.5rem 0;
+    margin: 1rem 2rem 0.5rem 0;
 }
 
 .container h3 {
     display: flex;
     justify-content: space-between; /* Align title and icon on opposite ends */
     align-items: center; /* Vertically align title and icon */
-    padding-bottom: 12px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #D6D6D6;
     font-weight: 400;
 }
@@ -37,6 +37,10 @@
     color: #808080;
     font-size: 0.6rem !important;
     grid-auto-flow: row dense;
+}
+
+.container .features {
+    padding-left: 0rem;
 }
 
 .iconOpen {
@@ -91,7 +95,7 @@
 @media only screen and (max-width: 1029px) {
 
     .container {
-        margin: 1rem 0 1.5rem 0;
+        margin: 1rem 0 1rem 0;
     }
     
     
@@ -120,9 +124,10 @@
 }
 
 @media only screen and (max-width: 440px) {
-    .container p {
+    .container p, .container .features {
         padding: 1rem 0.5rem;
     }
+
     .container h3 {
         font-weight: 400;
     }

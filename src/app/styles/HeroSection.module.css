@@ -7,6 +7,18 @@
     width: 100%;
 }
 
+.container .info {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+.info p:first-of-type {
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 5px;
+}
+
 .flowers {
     position: absolute;
     bottom: 0;
@@ -16,12 +28,12 @@
 .open {
     position: relative;
     padding-left: 25px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #969696;
     display: flex;
     align-items: center; /* Align text and dots vertically */
     height: 36px; /* Ensures proper alignment - adjust height as necessary */
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--grey);
 }
 
 .open:before {
@@ -61,10 +73,13 @@
     position: relative;
     margin-top: -20px;
     z-index: 1;
+  
 }
 
 .h1 {
+    color: var(--black);
     max-width: 400px;
+    margin-bottom: 2rem;
 }
 
 .container a {

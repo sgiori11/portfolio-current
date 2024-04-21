@@ -1,65 +1,43 @@
-.grid {
-    padding: 3.5rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    background-size: 20px 20px; /* Size of the squares */
-    background-image: 
-      linear-gradient(to right, #F6F6F6 1px, transparent 1px),
-      linear-gradient(to bottom, #F6F6F6 1px, transparent 1px);
-  }
- 
-  .grid div {
+.grid div {
     display: flex;
     flex-direction: column;
     gap: 6px;
-
   }
   
   .grid div p {
     font-weight: 600;
     margin-bottom: 1rem;
     font-size: 0.875rem;
+    z-index: 1;
   }
 
   .grid span {
     font-weight: 500;
     font-size: 0.875rem;
-    color: #808080;
+    color: #716D7E;
+    z-index: 1;
   }
 
-.softSkillsCont {
-    grid-area: softSkills;
-}
-
-.softSkillsImg {
-    grid-area: img;
-}
-
-.softSkills {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas: 
-    "img softSkills"
-    "img softSkills";
-    margin-top: 5em;
-
-}
-
-.softSkills div {
+  .grid {
+    position: relative; 
+    padding: 3.5rem 0;
     display: flex;
-    align-self: flex-end;
     flex-wrap: wrap;
-    
-}
-
-.softSkills div span {
-   display: block;
-   background-color: #c7c8e646;
-   color: rgb(95, 93, 106);
-   
-}
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .grid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX( -50%);
+    height: 100%;
+    width: 100vw !important;
+    background: #F3F6FA;
+    z-index: 0;
+  }
 
 @media only screen and (max-width: 1029px) {
 
@@ -96,10 +74,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-
-    .skillsCont {
-        
-      }
 
     .softSkillsImg  {
         width: 150px;

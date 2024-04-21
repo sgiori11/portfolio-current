@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import styles from '../styles/Projects.module.css';
 
 const cardVariants = {
-    hidden: { opacity: 0, y: 150 },
+    hidden: { opacity: 0, y: 50 },
     visible: {
         opacity: 1,
         y: 0,
@@ -27,7 +27,7 @@ export default function Projects({ project }) {
             initial="hidden"
             whileInView="visible"
             variants={cardVariants}
-            viewport={{ once: true, amount: 0.7 }} // Customize the trigger point
+            viewport={{ once: true, amount: 0.5 }} // Customize the trigger point
         >
             <a className={styles.projectLinkCont} href={project.link} 
                target="_blank" 

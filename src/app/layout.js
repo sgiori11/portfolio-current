@@ -1,5 +1,5 @@
 import './globals.css'
-import { Montserrat } from 'next/font/google'
+import { Lato } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
 
 
@@ -28,8 +28,9 @@ export const metadata = {
 };
  
  
-const montserrat = Montserrat({
+const font = Lato({
   style: ['normal'],
+  weight: ['300', '400', '700', '900'],
   subsets: ['latin'],
   variable: '--font-montserrat',
   display: 'swap',
@@ -39,7 +40,7 @@ const montserrat = Montserrat({
 export default function RootLayout({ children }) {
   return ( <>
     <html lang="en">
-      <body className={montserrat.variable}>
+      <body className={font.variable}>
         {children}
         <Analytics />
       </body>

@@ -32,7 +32,7 @@
 
 .tags span {
     margin-right: 12px;
-    color: #989898;
+    color: var(--grey);
     font-size: 0.875rem;
     font-weight: 500;
 }

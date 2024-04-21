@@ -26,7 +26,7 @@ export default function Home() {
            )))}
         </section>
         <section className={styles.projects}>
-          <h2>Public Projects</h2>
+          <h2>Dev Projects</h2>
           {data.map((project => (
             <Projects key={project.id} project={project} />
           )))}
