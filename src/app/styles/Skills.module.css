@@ -17,6 +17,7 @@
     font-weight: 500;
     color: var(--middle);
     z-index: 1;
+    font-size: 0.875rem;
   }
 
   .grid {

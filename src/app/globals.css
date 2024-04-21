@@ -74,6 +74,10 @@ a {
   body {
     padding: 1rem; /* This will apply when the screen is 440px or smaller */
   }
+
+  h1 {
+    font-size: 1.1rem;
+  }
  
 }
 
