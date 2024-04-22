@@ -8,7 +8,7 @@ export default function HeroSection() {
       <section className={styles.container}>
        <div className={styles.info}>
             <p>Stephanie Giori</p>
-            <p>cro // dev // design</p>
+            <p>1996 — Present</p>
        </div>
 
         <div className={styles.headingCont}>

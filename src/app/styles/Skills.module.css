@@ -7,17 +7,17 @@
   .grid div p {
     margin-bottom: 1rem;
     z-index: 1;
-    color: var(--grey);
+    color: var(--black);
     font-family: "JetBrains Mono", monospace;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
   }
 
   .grid span {
     font-weight: 500;
-    color: var(--grey);
+    color: var(--middle);
     z-index: 1;
-    font-size: 1rem;
+    font-size: 14px;
   }
 
   .grid {
