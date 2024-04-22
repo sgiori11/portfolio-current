@@ -1,9 +1,18 @@
+.skills {
+    grid-area: skills;
+}
+
 .projects {
     grid-area: projects;
 }
 
 .caseStudies {
     grid-area: cases;
+}
+
+.caseStudies h2 {
+    padding-bottom: 0;
+    padding-top: 37px;
 }
 
 .projects span {
@@ -13,6 +22,7 @@
 .collage {
     grid-area: collage;
 }
+
 
 
 .footer {
@@ -29,7 +39,7 @@
     text-decoration: underline;
 }
 
-.projects, .caseStudies, .collage {
+.projects, .caseStudies, .collage, .skills {
     border-right: 1px solid #bfc4cbfb;
 
 }
@@ -55,11 +65,13 @@
 }
 
 .pageContent {
+    margin-top: 5rem;
     position: relative;
     display: grid;
     grid-template-columns: 1fr minmax(0px, 150px);
     row-gap: 0em;
     grid-template-areas: 
+    "skills sidebar"
     "cases sidebar"
     "projects sidebar"
     "collage sidebar"
@@ -68,7 +80,7 @@
 
 @media only screen and (max-width: 1029px) {
 
-    .projects, .caseStudies {
+    .projects, .caseStudies, .skills {
         border-right: none;
     
     }
@@ -83,6 +95,7 @@
     column-gap: 0;
     row-gap: 0;
     grid-template-areas: 
+    "skills"
     "cases"
     "projects"
     "collage"
@@ -112,6 +125,12 @@
     transition: transform 0.3s ease;
  }
 
+}
+
+@media only screen and (max-width: 890px) { 
+    .pageContent {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 500px) {

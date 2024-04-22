@@ -22,11 +22,12 @@
 
   .grid {
     position: relative; 
-    padding: 3.5rem 0;
+    padding: 0rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
+    margin-right: 32px;
   }
   
   .grid::before {
@@ -44,40 +45,11 @@
     z-index: 0;
   }
 
-@media only screen and (max-width: 1029px) {
+  @media only screen and (max-width: 1029px) {
 
-    .skillsCont {
-        display: flex;
-        flex-wrap: wrap;
-        
-      }
-    
-      .softSkills {
-        margin-top: 5em !important;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-areas: 
-        "img softSkills"
-        "img softSkills";
+    .grid {
+        margin-right: auto;
     }
     
-    .softSkills section {
-        display: flex;
-        align-self: flex-end;
-        flex-wrap: wrap;
-        
-    }
     
-    .softSkills div span {
-       display: block;
-    }
-    
-}
-
-@media only screen and (max-width: 500px) {
-
-    .softSkillsImg  {
-        width: 150px;
-        height: auto;
-      }
 }

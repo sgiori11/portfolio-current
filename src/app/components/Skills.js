@@ -4,7 +4,6 @@ export default function Skills() {
   return (
     <section className={styles.grid}>
        <div>
-        <p>Tools</p>
         {["React + Nextjs", "S(CSS)", "Git", "Figma", "Webflow", "Optimizely", "Google Analytics", "Midjourney"].map((tool, index) => (
           <span key={index}>
             {tool}
@@ -12,7 +11,6 @@ export default function Skills() {
         ))}
       </div>
       <div>
-        <p>UX Research Methods</p>
         {["A/B Testing", "Data Analysis", "Heuristic Evaluations", "Voice of Customer Surveys", "Screen Recordings"].map((skill, index) => (
           <span key={index}>
             {skill}
@@ -20,8 +18,8 @@ export default function Skills() {
         ))}
       </div>
       <div>
-        <p>Languages</p>
-        {["English (Native)", "Italian (B1 and improving)", "Norwegian (B1 and forgetting)"].map((language, index) => (
+    
+        {["English (Native)", "Italian (B1)", "Norwegian (A2)"].map((language, index) => (
           <span key={index}>
             {language}
           </span>

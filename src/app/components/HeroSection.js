@@ -1,12 +1,20 @@
 import Image from 'next/image';
 import styles from '../styles/HeroSection.module.css';
 import heroImg from '/public/tree.png';
+import logo from '/public/logo.png';
 
 export default function HeroSection() {
 
     return (
       <section className={styles.container}>
        <div className={styles.info}>
+            <Image 
+                priority={true}
+                className={styles.logo}
+                src={logo}
+                alt="black and white SG logo"
+                width={25}
+            />
             <p>Stephanie Giori</p>
             <p>1996 — Present</p>
        </div>

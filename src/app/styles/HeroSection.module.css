@@ -13,6 +13,11 @@
   color: var(--grey);
 }
 
+.logo {
+  position: relative;
+  margin-bottom: 5px;
+}
+
 .info p:first-of-type {
   font-weight: 600;
   color: var(--black);
@@ -29,11 +34,11 @@
     position: relative;
     padding-left: 25px;
     display: flex;
-    align-items: center; /* Align text and dots vertically */
-    height: 36px; /* Ensures proper alignment - adjust height as necessary */
+    align-items: baseline; /* Align text and dots vertically */
     font-size: 1rem;
     font-weight: 500;
     color: var(--grey);
+    vertical-align: baseline;
 }
 
 .open:before {
@@ -52,6 +57,7 @@
     content: '';
     position: absolute;
     left: 0; 
+    top: 8px;
     width: 8px;
     height: 8px;
     background-color: #2BD350;

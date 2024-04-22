@@ -16,8 +16,11 @@ export default function Home() {
     <>
       <div>
       <HeroSection />
-      <Skills />
       <section className={styles.pageContent}>
+      <section className={styles.skills}>
+      <h2>SKILLS</h2>
+        <Skills />
+      </section>
         <Sidebar className={styles.sidebar} />
         <section className={styles.caseStudies}>
           <h2>CRO</h2>

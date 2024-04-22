@@ -6,7 +6,7 @@
 
   --black: rgba(41, 41, 41, 0.902);
   --middle: #424242;
-  --grey: #777486;
+  --grey: #736F80;
   --purple: #6F00FD;
   --light: #DCDDF9;
 }
@@ -29,7 +29,7 @@ body {
   font-family: var(--font-montserrat);
   font-size: 1rem;
   font-weight: 300;
-   background: white;
+   background: hsla(221, 100%, 98.5%, 1);
    color: var(--middle);
    white-space: pre-line;  
    vertical-align: bottom;
@@ -46,12 +46,13 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 400;
   padding-top: 2rem;
   padding-bottom: 1rem;
   font-family: "JetBrains Mono", monospace;
   color: var(--grey);
+  letter-spacing: 0.05em;
 }
 
 h3 {

@@ -9,7 +9,7 @@
     padding-bottom: 5px;
     border-bottom: 1px solid #D6D6D6;
     font-weight: 400;
-}
+} 
 
 .container h3:hover {
     color: #6F00FD;
@@ -83,12 +83,18 @@
 }
 
 .caseCont p:last-of-type {
-    background-color: #F5F4FD;
     border-radius: 6px;
+    border: 1px dashed #2810dc;
 }
 
 .caseCont p span {
-    font-weight: 600;
+    display: block;
+    font-weight: 300;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--middle);
+    margin-bottom: 8px;
 }
 
 @media only screen and (max-width: 1029px) {
