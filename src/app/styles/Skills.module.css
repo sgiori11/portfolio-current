@@ -10,12 +10,12 @@
     color: var(--black);
     font-family: "JetBrains Mono", monospace;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   .grid span {
     font-weight: 500;
-    color: var(--middle);
+    color: var(--black);
     z-index: 1;
     font-size: 14px;
   }
