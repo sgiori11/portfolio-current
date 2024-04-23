@@ -70,15 +70,15 @@ export default function CaseStudies({ caseStudy }) {
               {caseStudy.features}
             </motion.p>
             <motion.p variants={itemVariants}>
-              <span>Case: </span>
+              <span>CASE</span>
               {caseStudy.case}
             </motion.p>
             <motion.p variants={itemVariants}>
-              <span>Research and Development: </span>
+              <span>RESEARCH AND DEVELOPMENT</span>
               {caseStudy.description}
             </motion.p>
             <motion.p variants={itemVariants}>
-              <span>Results: </span>
+              <span>RESULTS</span>
               {caseStudy.results}
             </motion.p>
           </motion.div>

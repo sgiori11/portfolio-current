@@ -44,7 +44,7 @@
 }
 
 .projects, .caseStudies, .collage, .skills {
-    border-right: 1px solid #bfc4cbfb;
+    border-right: 1px solid var(--light-grey);
 
 }
 
