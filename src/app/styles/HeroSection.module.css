@@ -5,7 +5,7 @@
     align-items: flex-start;
     min-height: 100vh;
     width: 100%;
-}
+} 
 
 .container .info {
   font-size: 1rem;
@@ -148,6 +148,13 @@
 
 
 @media only screen and (max-width: 900px) {
+
+  .container {
+    justify-content: space-around;
+    min-height: 500px;
+    border-bottom: 1px dashed var(--light-grey);
+    margin-bottom: 10px;
+} 
 
     .h1 {
         max-width: 450px;
