@@ -8,13 +8,6 @@ export default function HeroSection() {
     return ( 
       <section className={styles.container}>
        <div className={styles.info}>
-            <Image 
-                priority={true}
-                className={styles.logo}
-                src={logo}
-                alt="black and white SG logo"
-                width={50}
-            />
             <p>Stephanie Giori</p>
             <p>1996 — Present</p>
        </div>
