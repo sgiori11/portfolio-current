@@ -10,9 +10,13 @@
     grid-area: cases;
 }
 
+.projects h2 {
+    padding-top: 37px;
+}
+
 .caseStudies h2 {
     padding-bottom: 0;
-    padding-top: 37px;
+    padding-top: 47px;
 }
 
 .projects span {

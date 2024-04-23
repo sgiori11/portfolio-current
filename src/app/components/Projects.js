@@ -2,33 +2,14 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { motion } from "framer-motion";
 import styles from '../styles/Projects.module.css';
 
-const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            type: "tween",
-            duration: 0.5,
-            ease: "easeOut"
-        }
-    }
-};
 
 export default function Projects({ project }) {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <motion.div 
-            className={styles.gridCont}
-            initial="hidden"
-            whileInView="visible"
-            variants={cardVariants}
-            viewport={{ once: true, amount: 0.5 }} // Customize the trigger point
-        >
+        <div className={styles.gridCont}>
             <a className={styles.projectLinkCont} href={project.link} 
                target="_blank" 
                rel="noopener noreferrer"
@@ -59,6 +40,6 @@ export default function Projects({ project }) {
                     </div>
                 )}
             </a>
-        </motion.div>
+        </div>
     );
 }

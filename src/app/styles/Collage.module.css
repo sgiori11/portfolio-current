@@ -10,7 +10,7 @@
 .container h2 {
     display: block;
     width: 100%;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .container h2 span {
@@ -79,13 +79,13 @@
         border: none;
         padding: 0;
         padding-right: 2rem;
-        color: grey;
+        color: var(--grey);
+        background-color: none;
     }
 
     .container a:hover {
         border-radius: 2px;
-        background-color: none;
-        color: var(--middle);
+        background-color: none !important;
         transition: none;
     }
 

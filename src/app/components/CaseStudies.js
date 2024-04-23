@@ -6,19 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import styles from '../styles/CaseStudies.module.css';
 import plusIcon from '/public/plus.svg';
 
-// Variants for the title animation
-const titleVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "tween",
-      duration: 0.5,
-      ease: "easeOut"
-    }
-  }
-};
 
 // Variants for the container that holds the animated content
 const containerVariants = {
@@ -44,12 +31,7 @@ export default function CaseStudies({ caseStudy }) {
 
   return (
     <section className={styles.container}>
-      <motion.div 
-        variants={titleVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.7 }}
-      >
+      <motion.div>
         <h3 onClick={toggleOpen}>
           {caseStudy.name}
           <motion.span
@@ -88,15 +70,15 @@ export default function CaseStudies({ caseStudy }) {
               {caseStudy.features}
             </motion.p>
             <motion.p variants={itemVariants}>
-              <span>CASE </span>
+              <span>Case: </span>
               {caseStudy.case}
             </motion.p>
             <motion.p variants={itemVariants}>
-              <span>RESEARCH & DEVELOPMENT </span>
+              <span>Research and Development: </span>
               {caseStudy.description}
             </motion.p>
             <motion.p variants={itemVariants}>
-              <span>RESULTS </span>
+              <span>Results: </span>
               {caseStudy.results}
             </motion.p>
           </motion.div>

@@ -65,7 +65,7 @@
 .caseImg {
     grid-area: image;
     object-fit: cover;
-    background-color: #f7f7f7;
+    background-color: #eee9ff;
     border-radius: 12px;
     padding: 1rem;
 }
@@ -84,7 +84,13 @@
 
 .caseCont p:last-of-type {
     border-radius: 6px;
-    border: 1px dashed #2810dc;
+    font-style: italic;
+}
+
+.caseCont span:last-of-type {
+    border-radius: 6px;
+    font-style: normal;
+    color: var(--purple);
 }
 
 .caseCont p span {
