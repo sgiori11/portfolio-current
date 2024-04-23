@@ -152,7 +152,7 @@
   .container {
     justify-content: space-around;
     min-height: 500px;
-    border-bottom: 1px dashed var(--light-grey);
+    border-bottom: 1px dotted var(--light-grey);
     margin-bottom: 10px;
 } 
 

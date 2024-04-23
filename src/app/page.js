@@ -1,5 +1,6 @@
 import styles from './page.module.css'
 import HeroSection from './components/HeroSection';
+import Designs from './components/Designs';
 import Sidebar from './components/Sidebar';
 import Projects from './components/Projects.js';
 import CaseStudies from './components/CaseStudies.js';
@@ -27,6 +28,10 @@ export default function Home() {
           {cases.map((caseStudy => (
             <CaseStudies key={caseStudy.id} caseStudy={caseStudy} />
            )))}
+        </section>
+        <section className={styles.designs}>
+          <h2>DESIGN</h2>
+          <Designs />
         </section>
         <section className={styles.projects}>
           <h2>DEV</h2>

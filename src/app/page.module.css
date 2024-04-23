@@ -11,12 +11,16 @@
 }
 
 .projects h2 {
-    padding-top: 37px;
+    padding-top: 47px;
 }
 
 .caseStudies h2 {
     padding-bottom: 0;
-    padding-top: 47px;
+    padding-top: 32px;
+}
+
+.skills h2 {
+    padding-top: 15px;
 }
 
 .projects span {
@@ -27,7 +31,13 @@
     grid-area: collage;
 }
 
+.designs {
+    grid-area: designs;
+}
 
+.designs h2 {
+    padding-top: 47px;
+}
 
 .footer {
     color: #738097;
@@ -43,7 +53,7 @@
     text-decoration: underline;
 }
 
-.projects, .caseStudies, .collage, .skills {
+.projects, .caseStudies, .collage, .skills, .designs {
     border-right: 1px solid var(--light-grey);
 
 }
@@ -75,16 +85,17 @@
     grid-template-columns: 1fr minmax(0px, 150px);
     row-gap: 0em;
     grid-template-areas: 
-    "skills sidebar"
     "cases sidebar"
+    "designs sidebar"
     "projects sidebar"
+    "skills sidebar"
     "collage sidebar"
     "footer footer";
 }
 
-@media only screen and (max-width: 1029px) {
+@media only screen and (max-width: 1078px) {
 
-    .projects, .caseStudies, .skills {
+    .projects, .caseStudies, .skills, .designs {
         border-right: none;
     
     }
@@ -99,9 +110,10 @@
     column-gap: 0;
     row-gap: 0;
     grid-template-areas: 
-    "skills"
     "cases"
+    "designs"
     "projects"
+    "skills"
     "collage"
     "sidebar"
     "footer";
