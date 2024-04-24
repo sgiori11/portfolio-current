@@ -34,7 +34,7 @@ export default function Home() {
           <Designs />
         </section>
         <section className={styles.projects}>
-          <h2>DEV</h2>
+          <h2>DEVELOPMENT</h2>
           <section className={styles.devCont}>
             {data.map((project => (
               <Projects key={project.id} project={project} />

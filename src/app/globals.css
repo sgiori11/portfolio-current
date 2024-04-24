@@ -30,7 +30,7 @@ body {
   font-family: var(--font-montserrat);
   font-size: 1rem;
   font-weight: 300;
-   background: hsla(221, 100%, 98.5%, 1);
+   background: hsla(221, 100%, 99.5%, 1);
    color: var(--middle);
    white-space: pre-line;  
    vertical-align: bottom;
