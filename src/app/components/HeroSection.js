@@ -8,6 +8,13 @@ export default function HeroSection() {
     return ( 
       <section className={styles.container}>
        <div className={styles.info}>
+            <Image 
+                priority={true}
+                className={styles.logo}
+                src={logo}
+                alt="logo"
+                width={50}
+            />
             <p>Stephanie Giori</p>
             <p>1996 — Present</p>
        </div>
@@ -27,7 +34,7 @@ export default function HeroSection() {
                 priority={true}
                 className={styles.flowers}
                 src={heroImg}
-                alt="black and white flowers"
+                alt="hand-drawn tree"
                 width={600}
             />
      </section>
