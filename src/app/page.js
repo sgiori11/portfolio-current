@@ -35,9 +35,11 @@ export default function Home() {
         </section>
         <section className={styles.projects}>
           <h2>DEV</h2>
-          {data.map((project => (
-            <Projects key={project.id} project={project} />
-          )))}
+          <section className={styles.devCont}>
+            {data.map((project => (
+              <Projects key={project.id} project={project} />
+            )))}
+          </section>
         </section>
         <Collage className={styles.collage}/>
         <footer className={styles.footer}>Built in Milan with espresso, Next.js, and<a href="https://www.websitecarbon.com/website/sgiori-xyz/">&nbsp;0.05g of CO2</a>.</footer>

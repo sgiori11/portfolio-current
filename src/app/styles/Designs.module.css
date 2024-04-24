@@ -2,15 +2,20 @@
     display: grid;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 3rem;
     margin-right: 32px;
 }
 
-.container p {
+.container span, .container p {
     color: var(--grey);
     font-size: 12px;
     line-height: 1.5;
     font-weight: 500;
+}
+
+.container p {
+    font-size: 14px;
+    color: var(--black);
 }
 
 .imgCont {

@@ -1,6 +1,4 @@
-'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 import trivitalize from '/public/trivitalize.png';
 import sji from '/public/sji.png';
@@ -20,7 +18,8 @@ export default function Designs() {
                 </div>
                 <p>Nextup.Monks x Cannes Lions (Shortlisted)
                     <br></br>
-                2024</p>
+                <span>2024</span>
+                </p>
            </a>
 
            <a href="https://www.behance.net/gallery/196749457/Startup-Jobs-Italia/modules/1114253727" target='_blank'>
@@ -34,7 +33,8 @@ export default function Designs() {
             </div>
              <p>Startup Jobs Italia
              <br></br>
-             2023</p>
+             <span>2023</span>
+             </p>
            </a>
         </section>
 

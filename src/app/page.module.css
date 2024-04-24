@@ -20,7 +20,7 @@
 }
 
 .skills h2 {
-    padding-top: 15px;
+    padding-top: 47px;
 }
 
 .projects span {
@@ -93,7 +93,32 @@
     "footer footer";
 }
 
+.devCont {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-right: 32px;
+} 
+
+.devCont p, .devCont span {
+    color: var(--grey);
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.devCont p {
+    font-size: 14px;
+    color: var(--black);
+}
+
+
 @media only screen and (max-width: 1078px) {
+
+    .devCont {
+        margin-right: 0px;
+    }
 
     .projects, .caseStudies, .skills, .designs {
         border-right: none;
@@ -146,6 +171,13 @@
 @media only screen and (max-width: 890px) { 
     .pageContent {
         margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 790px) { 
+    .devCont {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 

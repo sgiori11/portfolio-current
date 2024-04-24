@@ -1,104 +1,64 @@
-.gridCont {
-    position: relative;
-} 
 
-.projectTitle {
+.imgCont {
+    position: relative;
+    border-radius: 8px;
     display: flex;
-    align-items: baseline;
-    margin-bottom: 5px;
-    font-weight: 400;
-    grid-area: title;
-    font-size: 1rem;
-}
-
-.svg {
-    position: relative;
-    top: -2px;
-    margin-left: 10px;
-     
-}
-
-.svg svg {
-    transition: transform 0.3s ease;
-}
+    align-items: flex-end; /* Start at the bottom */
+    justify-content: center;
+    width: 450px;
+    height: 250px;
+    background-color: #F2F1FF;
+    overflow: hidden; /* In case the image is larger than the container */
+    margin-bottom: 1rem;
+ }
+ 
+ .imgCont img {
+     position: absolute;
+     bottom: -15px;
+     border-radius: 4px;
+     transition: all 0.5s ease; /* Transition the transform property */
+ }
+ 
+ .imgCont:hover img {
+      bottom: 0;
+ }
 
 
 .tags {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    grid-area: tags;
 }
 
 .tags span {
-    margin-right: 12px;
-    color: var(--grey);
-    font-size: 0.875rem;
-    font-weight: 500;
-}
-
-.projectImg {
-    transition: 0.3s ease;
-    grid-area: image;
- 
-}
-
-.projectImg img {
-    border-radius: 5px;
-    object-fit: cover;
-    transition: 0.3s ease;
-}
-
-.projectLinkCont {
-    display: inline-grid;
-    padding: 0 1em 2em 0;
-    grid-template-columns: minmax(100px, 400px) 250px;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "title image"
-    "tags image";
-}
-
-.projectLinkCont:hover .projectImg img {
-    display: block;
-    transition: 0.3s ease;
+    margin-right: 10px;
 
 }
 
-.projectLinkCont:last-of-type {
-    
-}
+@media only screen and (max-width: 890px) { 
 
-.projectImgOnHover {
-    position: absolute;
-    top: 0; 
-    right: 1rem; 
-    display: block;
-    z-index: 10; /* Ensure it's above other content */
-}
+    .imgCont {
+        width: 100%;
+        height: 225px;
+     }
 
-
-@media only screen and (max-width: 725px) {
-    .projectImgOnHover {
-       display: none;
+     .imgCont img {
+        width: 300px !important;
+        height: auto;
     }
 
-    .projectLinkCont:hover .projectImg img {
-        display: none;
-    }
-
-    .tags {
-        flex-wrap: nowrap;
-    }
-
-    .projectLinkCont {
-        display: flex;
-        flex-direction: column;
+     .imgCont:hover img {
+        bottom: 0;
     }
 }
 
-@media only screen and (max-width: 440px) {
-    .projectTitle {
-        font-size: 1rem;
+@media only screen and (max-width: 790px) { 
+
+    .imgCont {
+        margin-bottom: 0.5rem;
+     }
+
+     .imgCont:hover img {
+        bottom: 0;
     }
-  }
+}
