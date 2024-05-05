@@ -83,7 +83,7 @@ export default function CaseStudies({ caseStudy }) {
             </motion.p>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> 
     </section>
   );
 }
