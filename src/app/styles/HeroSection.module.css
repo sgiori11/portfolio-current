@@ -31,20 +31,33 @@
 
 .open {
     position: relative;
-    padding-left: 25px;
     display: flex;
     align-items: baseline; /* Align text and dots vertically */
     font-size: 1rem;
-    font-weight: 500;
-    color: var(--grey);
+    font-weight: 700;
     vertical-align: baseline;
+    padding: 15px 35px; /* Padding for button-like appearance */
+    display: inline-flex; /* Changed from flex to inline-flex */
+    align-items: center; /* Align text and dots vertically */
+    font-size: 1rem;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    border-radius: 8px; /* Rounded corners for button-like appearance */
+    transition: background-color 0.5s ease; /* Smooth transition for text color */
+  
+}
+
+.open:hover {
+  color: white;
+  background-color: var(--purple);
+  transition: background-color 0.5s ease;
 }
 
 .open:before {
     content: "";
     position: absolute; 
     display: block;
-    left: -8px; /* Align the dot to the left */
+    left: 7px; /* Align flashing dot to the left */
     width: 24px;
     height: 24px;
     border-radius: 100%; /* Make it round */
@@ -55,8 +68,7 @@
 .open:after {
     content: '';
     position: absolute;
-    left: 0; 
-    top: 8px;
+    left: 15px; 
     width: 8px;
     height: 8px;
     background-color: #2BD350;
@@ -85,10 +97,6 @@
     color: var(--black);
     max-width: 400px;
     margin-bottom: 2rem;
-}
-
-.container a {
-    text-decoration: underline;
 }
 
 .span {

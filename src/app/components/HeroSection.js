@@ -13,7 +13,7 @@ export default function HeroSection() {
                 className={styles.logo}
                 src={logo}
                 alt="logo"
-                width={50}
+                width={50} 
             />
             <p>Stephanie Giori</p>
             <p>1996 — Present</p>
@@ -21,13 +21,12 @@ export default function HeroSection() {
 
         <div className={styles.headingCont}>
             <h1 className={styles.h1}>
-            I&apos;m an Italian-American designer and developer based in Milan <span className={styles.span}>Oslo</span>. 
+            I&apos;m an Italian-American designer and developer based in Trento <span className={styles.span}>Oslo</span>. 
             <br></br>
-            <br></br>Currently using my biology degree to optimize websites and apps at <a href="https://media.monks.com/solutions/digital-experience-optimization" target="_blank">Media Monks</a>.
+            <br></br>Currently accepting clients while I pursue my master&apos;s degree in Human-Computer Interaction.
             </h1>
-            <span className={styles.open}>
-            <a href="mailto:stephaniegiori9@gmail.com">open to collab</a>
-            </span>
+            <a className={styles.open} href="mailto:stephaniegiori9@gmail.com">Work with me</a>
+         
            
         </div>
         <Image 
